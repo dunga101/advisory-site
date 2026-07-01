@@ -3,14 +3,21 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="dark">
 <title>Patch Tuesday Digest — Advisory Engine</title>
 <link rel="stylesheet" href="/static/style.css">
 </head>
 <body>
-<nav>
-  <a href="/">Home</a>
-  <a href="/digest/">Patch Tuesday Digest</a>
-</nav>
+<header class="site-header">
+  <div class="page">
+    <a class="brand" href="/">Advisory Engine</a>
+    <nav class="site-nav">
+      <a href="/">Home</a>
+      <a href="/digest/">Patch Tuesday Digest</a>
+    </nav>
+  </div>
+</header>
+<div class="page">
 <main>
 <p><a href="/">&larr; Home</a></p>
 <h1>Windows Patch Tuesday Digest</h1>
@@ -18,7 +25,8 @@
 <p class="muted">2026-06-09 — 1 bulletin.</p>
 
 <h2><a href="/advisories/microsoft-2026-jun.html">June 2026 Security Updates</a></h2>
-<table>
+<div class="table-wrap table-wrap--cards">
+<table class="table-kbs">
   <thead>
     <tr><th>KB</th><th>Product</th><th>Channel</th><th>Supersedes</th><th>Verdict</th></tr>
   </thead>
@@ -28,197 +36,157 @@
       <td>Windows 10 Version 1607 for 32-bit Systems</td>
       <td>b_release</td>
       <td>5087537</td>
-      <td>
-        <span class="badge badge-deploy_now">deploy now</span>
-      </td>
+      <td><span class="verdict-badge verdict-deploy_now"><span class="dot"></span>deploy now</span></td>
     </tr>
     <tr>
       <td>5094122</td>
       <td>Windows 10 Version 1607 for x64-based Systems</td>
       <td>b_release</td>
       <td>5087537</td>
-      <td>
-        <span class="badge badge-deploy_now">deploy now</span>
-      </td>
+      <td><span class="verdict-badge verdict-deploy_now"><span class="dot"></span>deploy now</span></td>
     </tr>
     <tr>
       <td>5094123</td>
       <td>Windows 10 Version 1809 for 32-bit Systems</td>
       <td>b_release</td>
       <td>5087538</td>
-      <td>
-        <span class="badge badge-deploy_now">deploy now</span>
-      </td>
+      <td><span class="verdict-badge verdict-deploy_now"><span class="dot"></span>deploy now</span></td>
     </tr>
     <tr>
       <td>5094123</td>
       <td>Windows 10 Version 1809 for x64-based Systems</td>
       <td>b_release</td>
       <td>5087538</td>
-      <td>
-        <span class="badge badge-deploy_now">deploy now</span>
-      </td>
+      <td><span class="verdict-badge verdict-deploy_now"><span class="dot"></span>deploy now</span></td>
     </tr>
     <tr>
       <td>5094127</td>
       <td>Windows 10 Version 21H2 for 32-bit Systems</td>
       <td>b_release</td>
       <td>5087544</td>
-      <td>
-        <span class="badge badge-deploy_now">deploy now</span>
-      </td>
+      <td><span class="verdict-badge verdict-deploy_now"><span class="dot"></span>deploy now</span></td>
     </tr>
     <tr>
       <td>5094127</td>
       <td>Windows 10 Version 21H2 for ARM64-based Systems</td>
       <td>b_release</td>
       <td>5087544</td>
-      <td>
-        <span class="badge badge-deploy_now">deploy now</span>
-      </td>
+      <td><span class="verdict-badge verdict-deploy_now"><span class="dot"></span>deploy now</span></td>
     </tr>
     <tr>
       <td>5094127</td>
       <td>Windows 10 Version 21H2 for x64-based Systems</td>
       <td>b_release</td>
       <td>5087544</td>
-      <td>
-        <span class="badge badge-deploy_now">deploy now</span>
-      </td>
+      <td><span class="verdict-badge verdict-deploy_now"><span class="dot"></span>deploy now</span></td>
     </tr>
     <tr>
       <td>5093998</td>
       <td>Windows 11 Version 22H2 for ARM64-based Systems</td>
       <td>b_release</td>
       <td>5087420</td>
-      <td>
-        <span class="badge badge-deploy_now">deploy now</span>
-      </td>
+      <td><span class="verdict-badge verdict-deploy_now"><span class="dot"></span>deploy now</span></td>
     </tr>
     <tr>
       <td>5093998</td>
       <td>Windows 11 Version 22H2 for x64-based Systems</td>
       <td>b_release</td>
       <td>5087420</td>
-      <td>
-        <span class="badge badge-deploy_now">deploy now</span>
-      </td>
+      <td><span class="verdict-badge verdict-deploy_now"><span class="dot"></span>deploy now</span></td>
     </tr>
     <tr>
       <td>5093998</td>
       <td>Windows 11 Version 23H2 for ARM64-based Systems</td>
       <td>b_release</td>
       <td>5087420</td>
-      <td>
-        <span class="badge badge-deploy_now">deploy now</span>
-      </td>
+      <td><span class="verdict-badge verdict-deploy_now"><span class="dot"></span>deploy now</span></td>
     </tr>
     <tr>
       <td>5094126</td>
       <td>Windows 11 Version 24H2 for ARM64-based Systems</td>
       <td>b_release</td>
       <td>5089549</td>
-      <td>
-        <span class="badge badge-deploy_now">deploy now</span>
-      </td>
+      <td><span class="verdict-badge verdict-deploy_now"><span class="dot"></span>deploy now</span></td>
     </tr>
     <tr>
       <td>5094126</td>
       <td>Windows 11 Version 25H2 for ARM64-based Systems</td>
       <td>b_release</td>
       <td>5089549</td>
-      <td>
-        <span class="badge badge-deploy_now">deploy now</span>
-      </td>
+      <td><span class="verdict-badge verdict-deploy_now"><span class="dot"></span>deploy now</span></td>
     </tr>
     <tr>
       <td>5095051</td>
       <td>Windows 11 Version 26H1 for ARM64-based Systems</td>
       <td>b_release</td>
-      <td>—</td>
-      <td>
-        <span class="badge badge-deploy_now">deploy now</span>
-      </td>
+      <td>First release</td>
+      <td><span class="verdict-badge verdict-deploy_now"><span class="dot"></span>deploy now</span></td>
     </tr>
     <tr>
       <td>5094042</td>
       <td>Windows Server 2012</td>
       <td>b_release</td>
       <td>5087470</td>
-      <td>
-        <span class="badge badge-deploy_now">deploy now</span>
-      </td>
+      <td><span class="verdict-badge verdict-deploy_now"><span class="dot"></span>deploy now</span></td>
     </tr>
     <tr>
       <td>5094006</td>
       <td>Windows Server 2012 R2</td>
       <td>b_release</td>
       <td>5082806</td>
-      <td>
-        <span class="badge badge-deploy_now">deploy now</span>
-      </td>
+      <td><span class="verdict-badge verdict-deploy_now"><span class="dot"></span>deploy now</span></td>
     </tr>
     <tr>
       <td>5094041</td>
       <td>Windows Server 2012 R2</td>
       <td>b_release</td>
       <td>5087471</td>
-      <td>
-        <span class="badge badge-deploy_now">deploy now</span>
-      </td>
+      <td><span class="verdict-badge verdict-deploy_now"><span class="dot"></span>deploy now</span></td>
     </tr>
     <tr>
       <td>5094122</td>
       <td>Windows Server 2016</td>
       <td>b_release</td>
       <td>5087537</td>
-      <td>
-        <span class="badge badge-deploy_now">deploy now</span>
-      </td>
+      <td><span class="verdict-badge verdict-deploy_now"><span class="dot"></span>deploy now</span></td>
     </tr>
     <tr>
       <td>5094123</td>
       <td>Windows Server 2019</td>
       <td>b_release</td>
       <td>5087538</td>
-      <td>
-        <span class="badge badge-deploy_now">deploy now</span>
-      </td>
+      <td><span class="verdict-badge verdict-deploy_now"><span class="dot"></span>deploy now</span></td>
     </tr>
     <tr>
       <td>5094128</td>
       <td>Windows Server 2022</td>
       <td>b_release</td>
       <td>5087545</td>
-      <td>
-        <span class="badge badge-deploy_now">deploy now</span>
-      </td>
+      <td><span class="verdict-badge verdict-deploy_now"><span class="dot"></span>deploy now</span></td>
     </tr>
     <tr>
       <td>5094126</td>
       <td>Windows Server 2025</td>
       <td>b_release</td>
       <td>5089549</td>
-      <td>
-        <span class="badge badge-deploy_now">deploy now</span>
-      </td>
+      <td><span class="verdict-badge verdict-deploy_now"><span class="dot"></span>deploy now</span></td>
     </tr>
     <tr>
       <td>5094127</td>
       <td>Windows Server, version 2004</td>
       <td>b_release</td>
       <td>5087544</td>
-      <td>
-        <span class="badge badge-deploy_now">deploy now</span>
-      </td>
+      <td><span class="verdict-badge verdict-deploy_now"><span class="dot"></span>deploy now</span></td>
     </tr>
   </tbody>
 </table>
+</div>
 
 </main>
-<footer>
+<footer class="site-footer">
   <p>Structured vendor advisory data only — no AI-generated narrative in this view.
-  Generated 2026-07-01 21:24 UTC.</p>
+  Generated 2026-07-01 22:23 UTC.</p>
 </footer>
+</div>
 </body>
 </html>

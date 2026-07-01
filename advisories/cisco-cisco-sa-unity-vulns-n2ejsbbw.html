@@ -3,21 +3,28 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="dark">
 <title>Cisco Unity Connection Cross-Site Scripting, Open Redirect, and SQL Injection Vulnerabilities — Advisory Engine</title>
 <link rel="stylesheet" href="/static/style.css">
 </head>
 <body>
-<nav>
-  <a href="/">Home</a>
-  <a href="/digest/">Patch Tuesday Digest</a>
-</nav>
+<header class="site-header">
+  <div class="page">
+    <a class="brand" href="/">Advisory Engine</a>
+    <nav class="site-nav">
+      <a href="/">Home</a>
+      <a href="/digest/">Patch Tuesday Digest</a>
+    </nav>
+  </div>
+</header>
+<div class="page">
 <main>
 <p><a href="/">&larr; Home</a></p>
 <h1>Cisco Unity Connection Cross-Site Scripting, Open Redirect, and SQL Injection Vulnerabilities</h1>
-<p class="muted">
+<p class="byline">
   Source: cisco / cisco-sa-unity-vulns-n2EJSbbw
  — <a href="https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-unity-vulns-n2EJSbbw">original advisory</a></p>
-<p class="muted">
+<p class="byline">
   Published: 2026-04-15
   &middot; Last updated: 2026-04-15
   &middot; Vendor severity: Medium
@@ -25,35 +32,44 @@
 </p>
 
 <h2>CVEs</h2>
-<table>
+<div class="table-wrap table-wrap--cards">
+<table class="table-cves">
   <thead>
-    <tr><th>CVE</th><th>CVSS</th><th>CWE</th><th>Exploited (KEV)</th></tr>
+    <tr><th>CVE</th><th>CVSS</th><th>CWE</th><th>Exploitation</th></tr>
   </thead>
   <tbody>
     <tr>
       <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-20059">CVE-2026-20059</a></td>
       <td>6.1</td>
-      <td>CWE-601</td>
-      <td></td>
+      <td>CWE-601: Open Redirect</td>
+      <td>
+        
+<span class="muted">Not observed in the wild</span>      </td>
     </tr>
     <tr>
       <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-20060">CVE-2026-20060</a></td>
       <td>6.1</td>
-      <td>CWE-601</td>
-      <td></td>
+      <td>CWE-601: Open Redirect</td>
+      <td>
+        
+<span class="muted">Not observed in the wild</span>      </td>
     </tr>
     <tr>
       <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-20061">CVE-2026-20061</a></td>
       <td>6.1</td>
-      <td>CWE-601</td>
-      <td></td>
+      <td>CWE-601: Open Redirect</td>
+      <td>
+        
+<span class="muted">Not observed in the wild</span>      </td>
     </tr>
   </tbody>
 </table>
+</div>
 
 
 
 <h2>Affected Products</h2>
+<div class="table-wrap">
 <table>
   <thead>
     <tr><th>Product</th><th>Affected versions</th><th>Fixed version</th></tr>
@@ -61,16 +77,18 @@
   <tbody>
     <tr>
       <td>Cisco Unity Connection</td>
-      <td>n/a</td>
-      <td>n/a</td>
+      <td>Not specified by vendor</td>
+      <td>Not specified by vendor</td>
     </tr>
   </tbody>
 </table>
+</div>
 
 </main>
-<footer>
+<footer class="site-footer">
   <p>Structured vendor advisory data only — no AI-generated narrative in this view.
-  Generated 2026-07-01 21:24 UTC.</p>
+  Generated 2026-07-01 22:23 UTC.</p>
 </footer>
+</div>
 </body>
 </html>
