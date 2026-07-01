@@ -1,0 +1,5639 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>June 2026 Security Updates — Advisory Engine</title>
+<link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+<nav>
+  <a href="/">Home</a>
+  <a href="/digest/">Patch Tuesday Digest</a>
+</nav>
+<main>
+<p><a href="/">&larr; Home</a></p>
+<h1>June 2026 Security Updates</h1>
+<p class="muted">
+  Source: microsoft / 2026-Jun
+ — <a href="https://msrc.microsoft.com/update-guide/releaseNote/2026-Jun">original advisory</a></p>
+<p class="muted">
+  Published: 2026-06-09
+  &middot; Last updated: 2026-07-14
+  &middot; Vendor severity: Critical
+  <span class="badge badge-kev">KEV</span>
+</p>
+
+<h2>CVEs</h2>
+<table>
+  <thead>
+    <tr><th>CVE</th><th>CVSS</th><th>CWE</th><th>Exploited (KEV)</th></tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2025-10263">CVE-2025-10263</a></td>
+      <td>9.3</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2025-71313">CVE-2025-71313</a></td>
+      <td>4.4</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2025-71315">CVE-2025-71315</a></td>
+      <td>5.5</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-10275">CVE-2026-10275</a></td>
+      <td>5.0</td>
+      <td>CWE-120</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-10722">CVE-2026-10722</a></td>
+      <td>3.3</td>
+      <td>CWE-190</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-10846">CVE-2026-10846</a></td>
+      <td>n/a</td>
+      <td>CWE-346</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-10879">CVE-2026-10879</a></td>
+      <td>8.6</td>
+      <td>CWE-787</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-10881">CVE-2026-10881</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-10882">CVE-2026-10882</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-10883">CVE-2026-10883</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-10884">CVE-2026-10884</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-10886">CVE-2026-10886</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-10887">CVE-2026-10887</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-10888">CVE-2026-10888</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-10889">CVE-2026-10889</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-10890">CVE-2026-10890</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-10891">CVE-2026-10891</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-10892">CVE-2026-10892</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-10893">CVE-2026-10893</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-10894">CVE-2026-10894</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-10895">CVE-2026-10895</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-10897">CVE-2026-10897</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-10898">CVE-2026-10898</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-10899">CVE-2026-10899</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-10900">CVE-2026-10900</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-10901">CVE-2026-10901</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-10902">CVE-2026-10902</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-10903">CVE-2026-10903</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-10904">CVE-2026-10904</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-10905">CVE-2026-10905</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-10906">CVE-2026-10906</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-10907">CVE-2026-10907</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-10908">CVE-2026-10908</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-10909">CVE-2026-10909</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-10910">CVE-2026-10910</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-10911">CVE-2026-10911</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-10912">CVE-2026-10912</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-10913">CVE-2026-10913</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-10914">CVE-2026-10914</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-10916">CVE-2026-10916</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-10917">CVE-2026-10917</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-10918">CVE-2026-10918</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-10919">CVE-2026-10919</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-10920">CVE-2026-10920</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-10921">CVE-2026-10921</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-10922">CVE-2026-10922</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-10923">CVE-2026-10923</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-10924">CVE-2026-10924</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-10925">CVE-2026-10925</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-10926">CVE-2026-10926</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-10927">CVE-2026-10927</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-10928">CVE-2026-10928</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-10929">CVE-2026-10929</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-10930">CVE-2026-10930</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-10931">CVE-2026-10931</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-10932">CVE-2026-10932</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-10933">CVE-2026-10933</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-10934">CVE-2026-10934</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-10935">CVE-2026-10935</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-10936">CVE-2026-10936</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-10937">CVE-2026-10937</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-10938">CVE-2026-10938</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-10939">CVE-2026-10939</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-10940">CVE-2026-10940</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-10941">CVE-2026-10941</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-10942">CVE-2026-10942</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-10943">CVE-2026-10943</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-10945">CVE-2026-10945</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-10946">CVE-2026-10946</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-10947">CVE-2026-10947</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-10948">CVE-2026-10948</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-10949">CVE-2026-10949</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-10953">CVE-2026-10953</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-10954">CVE-2026-10954</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-10955">CVE-2026-10955</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-10956">CVE-2026-10956</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-10957">CVE-2026-10957</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-10959">CVE-2026-10959</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-10960">CVE-2026-10960</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-10962">CVE-2026-10962</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-10963">CVE-2026-10963</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-10964">CVE-2026-10964</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-10965">CVE-2026-10965</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-10966">CVE-2026-10966</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-10967">CVE-2026-10967</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-10968">CVE-2026-10968</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-10969">CVE-2026-10969</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-10970">CVE-2026-10970</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-10971">CVE-2026-10971</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-10972">CVE-2026-10972</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-10973">CVE-2026-10973</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-10974">CVE-2026-10974</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-10975">CVE-2026-10975</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-10976">CVE-2026-10976</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-10977">CVE-2026-10977</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-10978">CVE-2026-10978</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-10979">CVE-2026-10979</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-10980">CVE-2026-10980</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-10981">CVE-2026-10981</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-10982">CVE-2026-10982</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-10983">CVE-2026-10983</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-10984">CVE-2026-10984</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-10985">CVE-2026-10985</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-10986">CVE-2026-10986</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-10987">CVE-2026-10987</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-10988">CVE-2026-10988</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-10989">CVE-2026-10989</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-10990">CVE-2026-10990</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-10991">CVE-2026-10991</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-10992">CVE-2026-10992</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-10993">CVE-2026-10993</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-10994">CVE-2026-10994</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-10995">CVE-2026-10995</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-10996">CVE-2026-10996</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-10997">CVE-2026-10997</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-10998">CVE-2026-10998</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-10999">CVE-2026-10999</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-11000">CVE-2026-11000</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-11001">CVE-2026-11001</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-11002">CVE-2026-11002</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-11003">CVE-2026-11003</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-11004">CVE-2026-11004</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-11005">CVE-2026-11005</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-11006">CVE-2026-11006</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-11007">CVE-2026-11007</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-11008">CVE-2026-11008</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-11009">CVE-2026-11009</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-11010">CVE-2026-11010</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-11011">CVE-2026-11011</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-11012">CVE-2026-11012</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-11013">CVE-2026-11013</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-11014">CVE-2026-11014</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-11015">CVE-2026-11015</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-11016">CVE-2026-11016</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-11017">CVE-2026-11017</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-11018">CVE-2026-11018</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-11019">CVE-2026-11019</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-11020">CVE-2026-11020</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-11021">CVE-2026-11021</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-11022">CVE-2026-11022</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-11023">CVE-2026-11023</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-11024">CVE-2026-11024</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-11025">CVE-2026-11025</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-11026">CVE-2026-11026</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-11027">CVE-2026-11027</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-11028">CVE-2026-11028</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-11029">CVE-2026-11029</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-11030">CVE-2026-11030</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-11031">CVE-2026-11031</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-11032">CVE-2026-11032</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-11033">CVE-2026-11033</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-11034">CVE-2026-11034</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-11035">CVE-2026-11035</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-11036">CVE-2026-11036</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-11037">CVE-2026-11037</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-11038">CVE-2026-11038</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-11039">CVE-2026-11039</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-11040">CVE-2026-11040</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-11041">CVE-2026-11041</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-11042">CVE-2026-11042</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-11043">CVE-2026-11043</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-11044">CVE-2026-11044</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-11045">CVE-2026-11045</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-11046">CVE-2026-11046</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-11047">CVE-2026-11047</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-11048">CVE-2026-11048</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-11049">CVE-2026-11049</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-11050">CVE-2026-11050</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-11051">CVE-2026-11051</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-11052">CVE-2026-11052</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-11053">CVE-2026-11053</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-11054">CVE-2026-11054</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-11055">CVE-2026-11055</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-11056">CVE-2026-11056</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-11057">CVE-2026-11057</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-11058">CVE-2026-11058</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-11059">CVE-2026-11059</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-11060">CVE-2026-11060</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-11061">CVE-2026-11061</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-11062">CVE-2026-11062</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-11063">CVE-2026-11063</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-11064">CVE-2026-11064</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-11065">CVE-2026-11065</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-11066">CVE-2026-11066</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-11067">CVE-2026-11067</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-11068">CVE-2026-11068</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-11069">CVE-2026-11069</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-11070">CVE-2026-11070</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-11071">CVE-2026-11071</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-11072">CVE-2026-11072</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-11073">CVE-2026-11073</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-11074">CVE-2026-11074</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-11075">CVE-2026-11075</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-11076">CVE-2026-11076</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-11077">CVE-2026-11077</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-11078">CVE-2026-11078</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-11079">CVE-2026-11079</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-11080">CVE-2026-11080</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-11081">CVE-2026-11081</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-11082">CVE-2026-11082</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-11083">CVE-2026-11083</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-11084">CVE-2026-11084</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-11085">CVE-2026-11085</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-11086">CVE-2026-11086</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-11087">CVE-2026-11087</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-11088">CVE-2026-11088</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-11089">CVE-2026-11089</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-11090">CVE-2026-11090</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-11091">CVE-2026-11091</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-11092">CVE-2026-11092</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-11093">CVE-2026-11093</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-11094">CVE-2026-11094</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-11095">CVE-2026-11095</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-11096">CVE-2026-11096</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-11097">CVE-2026-11097</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-11098">CVE-2026-11098</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-11099">CVE-2026-11099</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-11100">CVE-2026-11100</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-11101">CVE-2026-11101</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-11102">CVE-2026-11102</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-11103">CVE-2026-11103</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-11104">CVE-2026-11104</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-11105">CVE-2026-11105</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-11106">CVE-2026-11106</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-11107">CVE-2026-11107</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-11108">CVE-2026-11108</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-11109">CVE-2026-11109</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-11110">CVE-2026-11110</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-11111">CVE-2026-11111</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-11112">CVE-2026-11112</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-11113">CVE-2026-11113</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-11114">CVE-2026-11114</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-11115">CVE-2026-11115</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-11116">CVE-2026-11116</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-11117">CVE-2026-11117</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-11118">CVE-2026-11118</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-11119">CVE-2026-11119</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-11120">CVE-2026-11120</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-11121">CVE-2026-11121</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-11122">CVE-2026-11122</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-11123">CVE-2026-11123</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-11124">CVE-2026-11124</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-11125">CVE-2026-11125</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-11126">CVE-2026-11126</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-11127">CVE-2026-11127</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-11128">CVE-2026-11128</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-11129">CVE-2026-11129</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-11130">CVE-2026-11130</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-11131">CVE-2026-11131</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-11132">CVE-2026-11132</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-11133">CVE-2026-11133</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-11134">CVE-2026-11134</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-11135">CVE-2026-11135</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-11136">CVE-2026-11136</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-11137">CVE-2026-11137</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-11138">CVE-2026-11138</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-11139">CVE-2026-11139</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-11140">CVE-2026-11140</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-11141">CVE-2026-11141</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-11142">CVE-2026-11142</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-11143">CVE-2026-11143</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-11144">CVE-2026-11144</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-11145">CVE-2026-11145</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-11146">CVE-2026-11146</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-11147">CVE-2026-11147</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-11148">CVE-2026-11148</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-11149">CVE-2026-11149</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-11150">CVE-2026-11150</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-11151">CVE-2026-11151</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-11152">CVE-2026-11152</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-11153">CVE-2026-11153</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-11154">CVE-2026-11154</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-11155">CVE-2026-11155</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-11156">CVE-2026-11156</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-11157">CVE-2026-11157</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-11158">CVE-2026-11158</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-11159">CVE-2026-11159</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-11160">CVE-2026-11160</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-11161">CVE-2026-11161</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-11162">CVE-2026-11162</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-11163">CVE-2026-11163</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-11164">CVE-2026-11164</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-11166">CVE-2026-11166</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-11167">CVE-2026-11167</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-11168">CVE-2026-11168</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-11169">CVE-2026-11169</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-11170">CVE-2026-11170</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-11171">CVE-2026-11171</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-11172">CVE-2026-11172</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-11173">CVE-2026-11173</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-11174">CVE-2026-11174</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-11175">CVE-2026-11175</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-11176">CVE-2026-11176</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-11177">CVE-2026-11177</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-11178">CVE-2026-11178</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-11179">CVE-2026-11179</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-11180">CVE-2026-11180</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-11181">CVE-2026-11181</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-11182">CVE-2026-11182</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-11184">CVE-2026-11184</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-11185">CVE-2026-11185</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-11186">CVE-2026-11186</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-11187">CVE-2026-11187</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-11188">CVE-2026-11188</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-11189">CVE-2026-11189</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-11190">CVE-2026-11190</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-11191">CVE-2026-11191</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-11192">CVE-2026-11192</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-11193">CVE-2026-11193</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-11194">CVE-2026-11194</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-11195">CVE-2026-11195</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-11196">CVE-2026-11196</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-11197">CVE-2026-11197</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-11198">CVE-2026-11198</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-11199">CVE-2026-11199</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-11200">CVE-2026-11200</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-11201">CVE-2026-11201</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-11203">CVE-2026-11203</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-11206">CVE-2026-11206</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-11207">CVE-2026-11207</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-11208">CVE-2026-11208</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-11209">CVE-2026-11209</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-11210">CVE-2026-11210</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-11211">CVE-2026-11211</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-11212">CVE-2026-11212</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-11213">CVE-2026-11213</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-11215">CVE-2026-11215</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-11216">CVE-2026-11216</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-11217">CVE-2026-11217</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-11218">CVE-2026-11218</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-11219">CVE-2026-11219</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-11220">CVE-2026-11220</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-11221">CVE-2026-11221</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-11222">CVE-2026-11222</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-11223">CVE-2026-11223</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-11224">CVE-2026-11224</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-11225">CVE-2026-11225</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-11226">CVE-2026-11226</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-11227">CVE-2026-11227</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-11228">CVE-2026-11228</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-11229">CVE-2026-11229</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-11230">CVE-2026-11230</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-11231">CVE-2026-11231</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-11232">CVE-2026-11232</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-11233">CVE-2026-11233</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-11234">CVE-2026-11234</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-11235">CVE-2026-11235</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-11236">CVE-2026-11236</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-11237">CVE-2026-11237</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-11238">CVE-2026-11238</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-11239">CVE-2026-11239</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-11240">CVE-2026-11240</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-11241">CVE-2026-11241</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-11242">CVE-2026-11242</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-11243">CVE-2026-11243</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-11244">CVE-2026-11244</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-11245">CVE-2026-11245</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-11246">CVE-2026-11246</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-11247">CVE-2026-11247</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-11248">CVE-2026-11248</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-11249">CVE-2026-11249</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-11250">CVE-2026-11250</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-11251">CVE-2026-11251</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-11252">CVE-2026-11252</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-11253">CVE-2026-11253</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-11254">CVE-2026-11254</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-11255">CVE-2026-11255</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-11256">CVE-2026-11256</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-11257">CVE-2026-11257</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-11258">CVE-2026-11258</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-11259">CVE-2026-11259</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-11260">CVE-2026-11260</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-11261">CVE-2026-11261</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-11262">CVE-2026-11262</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-11263">CVE-2026-11263</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-11264">CVE-2026-11264</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-11265">CVE-2026-11265</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-11266">CVE-2026-11266</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-11267">CVE-2026-11267</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-11268">CVE-2026-11268</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-11269">CVE-2026-11269</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-11270">CVE-2026-11270</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-11271">CVE-2026-11271</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-11273">CVE-2026-11273</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-11275">CVE-2026-11275</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-11276">CVE-2026-11276</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-11278">CVE-2026-11278</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-11279">CVE-2026-11279</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-11281">CVE-2026-11281</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-11282">CVE-2026-11282</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-11283">CVE-2026-11283</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-11284">CVE-2026-11284</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-11286">CVE-2026-11286</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-11287">CVE-2026-11287</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-11288">CVE-2026-11288</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-11289">CVE-2026-11289</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-11290">CVE-2026-11290</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-11291">CVE-2026-11291</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-11292">CVE-2026-11292</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-11293">CVE-2026-11293</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-11294">CVE-2026-11294</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-11295">CVE-2026-11295</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-11296">CVE-2026-11296</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-11297">CVE-2026-11297</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-11299">CVE-2026-11299</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-11300">CVE-2026-11300</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-11301">CVE-2026-11301</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-11303">CVE-2026-11303</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-11304">CVE-2026-11304</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-11305">CVE-2026-11305</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-11306">CVE-2026-11306</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-11307">CVE-2026-11307</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-11308">CVE-2026-11308</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-11309">CVE-2026-11309</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-11332">CVE-2026-11332</a></td>
+      <td>7.8</td>
+      <td>CWE-88</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-11463">CVE-2026-11463</a></td>
+      <td>7.3</td>
+      <td>CWE-843</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-11526">CVE-2026-11526</a></td>
+      <td>4.2</td>
+      <td>CWE-78</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-11623">CVE-2026-11623</a></td>
+      <td>4.5</td>
+      <td>CWE-416</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-11628">CVE-2026-11628</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-11629">CVE-2026-11629</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-11630">CVE-2026-11630</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-11631">CVE-2026-11631</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-11632">CVE-2026-11632</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-11633">CVE-2026-11633</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-11634">CVE-2026-11634</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-11635">CVE-2026-11635</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-11636">CVE-2026-11636</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-11637">CVE-2026-11637</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-11638">CVE-2026-11638</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-11639">CVE-2026-11639</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-11640">CVE-2026-11640</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-11641">CVE-2026-11641</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-11642">CVE-2026-11642</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-11643">CVE-2026-11643</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-11644">CVE-2026-11644</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-11645">CVE-2026-11645</a></td>
+      <td>n/a</td>
+      <td>CWE-787</td>
+      <td><span class="badge badge-kev">KEV</span></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-11646">CVE-2026-11646</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-11647">CVE-2026-11647</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-11648">CVE-2026-11648</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-11649">CVE-2026-11649</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-11650">CVE-2026-11650</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-11651">CVE-2026-11651</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-11652">CVE-2026-11652</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-11653">CVE-2026-11653</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-11654">CVE-2026-11654</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-11655">CVE-2026-11655</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-11656">CVE-2026-11656</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-11657">CVE-2026-11657</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-11658">CVE-2026-11658</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-11659">CVE-2026-11659</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-11660">CVE-2026-11660</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-11661">CVE-2026-11661</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-11662">CVE-2026-11662</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-11663">CVE-2026-11663</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-11664">CVE-2026-11664</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-11665">CVE-2026-11665</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-11666">CVE-2026-11666</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-11667">CVE-2026-11667</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-11668">CVE-2026-11668</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-11669">CVE-2026-11669</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-11670">CVE-2026-11670</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-11671">CVE-2026-11671</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-11672">CVE-2026-11672</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-11673">CVE-2026-11673</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-11674">CVE-2026-11674</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-11675">CVE-2026-11675</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-11676">CVE-2026-11676</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-11677">CVE-2026-11677</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-11678">CVE-2026-11678</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-11679">CVE-2026-11679</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-11680">CVE-2026-11680</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-11681">CVE-2026-11681</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-11682">CVE-2026-11682</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-11683">CVE-2026-11683</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-11684">CVE-2026-11684</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-11685">CVE-2026-11685</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-11686">CVE-2026-11686</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-11687">CVE-2026-11687</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-11688">CVE-2026-11688</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-11689">CVE-2026-11689</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-11690">CVE-2026-11690</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-11691">CVE-2026-11691</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-11692">CVE-2026-11692</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-11693">CVE-2026-11693</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-11694">CVE-2026-11694</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-11695">CVE-2026-11695</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-11696">CVE-2026-11696</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-11697">CVE-2026-11697</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-11698">CVE-2026-11698</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-11699">CVE-2026-11699</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-11700">CVE-2026-11700</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-11701">CVE-2026-11701</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-11816">CVE-2026-11816</a></td>
+      <td>8.1</td>
+      <td>CWE-22</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-11822">CVE-2026-11822</a></td>
+      <td>7.8</td>
+      <td>CWE-122</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-11824">CVE-2026-11824</a></td>
+      <td>7.8</td>
+      <td>CWE-122</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-12003">CVE-2026-12003</a></td>
+      <td>n/a</td>
+      <td>CWE-427</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-12007">CVE-2026-12007</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-12008">CVE-2026-12008</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-12009">CVE-2026-12009</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-12010">CVE-2026-12010</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-12011">CVE-2026-12011</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-12012">CVE-2026-12012</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-12013">CVE-2026-12013</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-12014">CVE-2026-12014</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-12015">CVE-2026-12015</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-12016">CVE-2026-12016</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-12017">CVE-2026-12017</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-12018">CVE-2026-12018</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-12019">CVE-2026-12019</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-12028">CVE-2026-12028</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-12030">CVE-2026-12030</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-12032">CVE-2026-12032</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-12087">CVE-2026-12087</a></td>
+      <td>9.1</td>
+      <td>CWE-125</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-12143">CVE-2026-12143</a></td>
+      <td>7.5</td>
+      <td>CWE-93</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-12437">CVE-2026-12437</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-12438">CVE-2026-12438</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-12439">CVE-2026-12439</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-12440">CVE-2026-12440</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-12441">CVE-2026-12441</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-12442">CVE-2026-12442</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-12443">CVE-2026-12443</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-12444">CVE-2026-12444</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-12445">CVE-2026-12445</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-12446">CVE-2026-12446</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-12447">CVE-2026-12447</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-12448">CVE-2026-12448</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-12449">CVE-2026-12449</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-12451">CVE-2026-12451</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-12452">CVE-2026-12452</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-12453">CVE-2026-12453</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-12454">CVE-2026-12454</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-12455">CVE-2026-12455</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-12456">CVE-2026-12456</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-12457">CVE-2026-12457</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-12458">CVE-2026-12458</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-12459">CVE-2026-12459</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-12460">CVE-2026-12460</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-12461">CVE-2026-12461</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-12462">CVE-2026-12462</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-12463">CVE-2026-12463</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-12464">CVE-2026-12464</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-12465">CVE-2026-12465</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-12466">CVE-2026-12466</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-12467">CVE-2026-12467</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-12468">CVE-2026-12468</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-12469">CVE-2026-12469</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-13021">CVE-2026-13021</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-13022">CVE-2026-13022</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-13023">CVE-2026-13023</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-13024">CVE-2026-13024</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-13025">CVE-2026-13025</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-13026">CVE-2026-13026</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-13027">CVE-2026-13027</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-13029">CVE-2026-13029</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-13031">CVE-2026-13031</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-13033">CVE-2026-13033</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-13034">CVE-2026-13034</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-13035">CVE-2026-13035</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-13036">CVE-2026-13036</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-13038">CVE-2026-13038</a></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-26142">CVE-2026-26142</a></td>
+      <td>9.8</td>
+      <td>CWE-502</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-27145">CVE-2026-27145</a></td>
+      <td>6.5</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-29167">CVE-2026-29167</a></td>
+      <td>8.6</td>
+      <td>CWE-416</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-29170">CVE-2026-29170</a></td>
+      <td>6.1</td>
+      <td>CWE-79</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-32174">CVE-2026-32174</a></td>
+      <td>7.7</td>
+      <td>CWE-287</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-32193">CVE-2026-32193</a></td>
+      <td>8.8</td>
+      <td>CWE-22</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-32208">CVE-2026-32208</a></td>
+      <td>8.8</td>
+      <td>CWE-79</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-3276">CVE-2026-3276</a></td>
+      <td>n/a</td>
+      <td>CWE-407</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-33113">CVE-2026-33113</a></td>
+      <td>5.4</td>
+      <td>CWE-79</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-33828">CVE-2026-33828</a></td>
+      <td>7.8</td>
+      <td>CWE-501</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-34180">CVE-2026-34180</a></td>
+      <td>7.5</td>
+      <td>CWE-125</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-34181">CVE-2026-34181</a></td>
+      <td>7.4</td>
+      <td>CWE-354</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-34182">CVE-2026-34182</a></td>
+      <td>9.1</td>
+      <td>CWE-354</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-34183">CVE-2026-34183</a></td>
+      <td>7.5</td>
+      <td>CWE-1325</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-34335">CVE-2026-34335</a></td>
+      <td>7.0</td>
+      <td>CWE-416</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-34355">CVE-2026-34355</a></td>
+      <td>7.5</td>
+      <td>CWE-122</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-34356">CVE-2026-34356</a></td>
+      <td>7.5</td>
+      <td>CWE-122</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-37460">CVE-2026-37460</a></td>
+      <td>7.5</td>
+      <td>CWE-20</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-40371">CVE-2026-40371</a></td>
+      <td>8.8</td>
+      <td>CWE-280</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-40376">CVE-2026-40376</a></td>
+      <td>7.5</td>
+      <td>CWE-20</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-40404">CVE-2026-40404</a></td>
+      <td>7.8</td>
+      <td>CWE-122</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-40409">CVE-2026-40409</a></td>
+      <td>7.8</td>
+      <td>CWE-197</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-40930">CVE-2026-40930</a></td>
+      <td>5.4</td>
+      <td>CWE-436</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-41092">CVE-2026-41092</a></td>
+      <td>7.8</td>
+      <td>CWE-284</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-41098">CVE-2026-41098</a></td>
+      <td>8.4</td>
+      <td>CWE-79</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-41108">CVE-2026-41108</a></td>
+      <td>7.0</td>
+      <td>CWE-122</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-42014">CVE-2026-42014</a></td>
+      <td>6.6</td>
+      <td>CWE-825</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-42504">CVE-2026-42504</a></td>
+      <td>7.5</td>
+      <td>CWE-407</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-42507">CVE-2026-42507</a></td>
+      <td>5.3</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-42535">CVE-2026-42535</a></td>
+      <td>7.5</td>
+      <td>CWE-668</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-42536">CVE-2026-42536</a></td>
+      <td>7.5</td>
+      <td>CWE-122</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-42764">CVE-2026-42764</a></td>
+      <td>7.5</td>
+      <td>CWE-476</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-42766">CVE-2026-42766</a></td>
+      <td>5.9</td>
+      <td>CWE-476</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-42767">CVE-2026-42767</a></td>
+      <td>5.9</td>
+      <td>CWE-476</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-42768">CVE-2026-42768</a></td>
+      <td>3.7</td>
+      <td>CWE-514</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-42769">CVE-2026-42769</a></td>
+      <td>5.3</td>
+      <td>CWE-295</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-42824">CVE-2026-42824</a></td>
+      <td>6.5</td>
+      <td>CWE-77</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-42828">CVE-2026-42828</a></td>
+      <td>7.8</td>
+      <td>CWE-126</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-42829">CVE-2026-42829</a></td>
+      <td>7.8</td>
+      <td>CWE-284</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-42835">CVE-2026-42835</a></td>
+      <td>8.1</td>
+      <td>CWE-74</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-42836">CVE-2026-42836</a></td>
+      <td>7.0</td>
+      <td>CWE-362</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-42837">CVE-2026-42837</a></td>
+      <td>7.8</td>
+      <td>CWE-125</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-42895">CVE-2026-42895</a></td>
+      <td>6.5</td>
+      <td>CWE-77</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-42902">CVE-2026-42902</a></td>
+      <td>7.8</td>
+      <td>CWE-285</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-42903">CVE-2026-42903</a></td>
+      <td>6.5</td>
+      <td>CWE-476</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-42904">CVE-2026-42904</a></td>
+      <td>9.6</td>
+      <td>CWE-122</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-42905">CVE-2026-42905</a></td>
+      <td>7.8</td>
+      <td>CWE-416</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-42906">CVE-2026-42906</a></td>
+      <td>5.5</td>
+      <td>CWE-200</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-42907">CVE-2026-42907</a></td>
+      <td>6.5</td>
+      <td>CWE-200</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-42908">CVE-2026-42908</a></td>
+      <td>7.5</td>
+      <td>CWE-125</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-42909">CVE-2026-42909</a></td>
+      <td>7.5</td>
+      <td>CWE-362</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-42910">CVE-2026-42910</a></td>
+      <td>7.8</td>
+      <td>CWE-787</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-42911">CVE-2026-42911</a></td>
+      <td>7.0</td>
+      <td>CWE-416</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-42912">CVE-2026-42912</a></td>
+      <td>7.0</td>
+      <td>CWE-362</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-42913">CVE-2026-42913</a></td>
+      <td>7.5</td>
+      <td>CWE-362</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-42914">CVE-2026-42914</a></td>
+      <td>5.3</td>
+      <td>CWE-125</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-42915">CVE-2026-42915</a></td>
+      <td>5.5</td>
+      <td>CWE-131</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-42916">CVE-2026-42916</a></td>
+      <td>7.8</td>
+      <td>CWE-190</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-42968">CVE-2026-42968</a></td>
+      <td>5.5</td>
+      <td>CWE-125</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-42969">CVE-2026-42969</a></td>
+      <td>5.5</td>
+      <td>CWE-908</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-42970">CVE-2026-42970</a></td>
+      <td>5.5</td>
+      <td>CWE-200</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-42971">CVE-2026-42971</a></td>
+      <td>5.5</td>
+      <td>CWE-200</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-42972">CVE-2026-42972</a></td>
+      <td>5.5</td>
+      <td>CWE-200</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-42973">CVE-2026-42973</a></td>
+      <td>5.5</td>
+      <td>CWE-200</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-42974">CVE-2026-42974</a></td>
+      <td>8.1</td>
+      <td>CWE-190</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-42977">CVE-2026-42977</a></td>
+      <td>7.8</td>
+      <td>CWE-362</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-42978">CVE-2026-42978</a></td>
+      <td>7.8</td>
+      <td>CWE-362</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-42979">CVE-2026-42979</a></td>
+      <td>7.8</td>
+      <td>CWE-362</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-42980">CVE-2026-42980</a></td>
+      <td>7.8</td>
+      <td>CWE-191</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-42981">CVE-2026-42981</a></td>
+      <td>8.1</td>
+      <td>CWE-191</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-42983">CVE-2026-42983</a></td>
+      <td>7.8</td>
+      <td>CWE-416</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-42984">CVE-2026-42984</a></td>
+      <td>7.0</td>
+      <td>CWE-416</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-42985">CVE-2026-42985</a></td>
+      <td>8.8</td>
+      <td>CWE-416</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-42986">CVE-2026-42986</a></td>
+      <td>7.8</td>
+      <td>CWE-416</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-42987">CVE-2026-42987</a></td>
+      <td>8.1</td>
+      <td>CWE-416</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-42989">CVE-2026-42989</a></td>
+      <td>7.8</td>
+      <td>CWE-59</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-42991">CVE-2026-42991</a></td>
+      <td>7.8</td>
+      <td>CWE-362</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-42992">CVE-2026-42992</a></td>
+      <td>7.5</td>
+      <td>CWE-122</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-42993">CVE-2026-42993</a></td>
+      <td>7.5</td>
+      <td>CWE-122</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-4367">CVE-2026-4367</a></td>
+      <td>5.5</td>
+      <td>CWE-125</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-43951">CVE-2026-43951</a></td>
+      <td>6.5</td>
+      <td>CWE-125</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-43958">CVE-2026-43958</a></td>
+      <td>7.8</td>
+      <td>CWE-121</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-43966">CVE-2026-43966</a></td>
+      <td>n/a</td>
+      <td>CWE-113</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-43973">CVE-2026-43973</a></td>
+      <td>n/a</td>
+      <td>CWE-770</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-44119">CVE-2026-44119</a></td>
+      <td>5.5</td>
+      <td>CWE-269</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-44185">CVE-2026-44185</a></td>
+      <td>7.3</td>
+      <td>CWE-126</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-44186">CVE-2026-44186</a></td>
+      <td>6.5</td>
+      <td>CWE-835</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-44631">CVE-2026-44631</a></td>
+      <td>9.4</td>
+      <td>CWE-124</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-44705">CVE-2026-44705</a></td>
+      <td>n/a</td>
+      <td>CWE-22</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-44799">CVE-2026-44799</a></td>
+      <td>7.5</td>
+      <td>CWE-122</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-44801">CVE-2026-44801</a></td>
+      <td>7.5</td>
+      <td>CWE-416</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-44802">CVE-2026-44802</a></td>
+      <td>7.8</td>
+      <td>CWE-416</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-44803">CVE-2026-44803</a></td>
+      <td>7.8</td>
+      <td>CWE-190</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-44804">CVE-2026-44804</a></td>
+      <td>7.8</td>
+      <td>CWE-416</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-44805">CVE-2026-44805</a></td>
+      <td>5.5</td>
+      <td>CWE-416</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-44807">CVE-2026-44807</a></td>
+      <td>7.8</td>
+      <td>CWE-416</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-44808">CVE-2026-44808</a></td>
+      <td>7.8</td>
+      <td>CWE-122</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-44809">CVE-2026-44809</a></td>
+      <td>7.8</td>
+      <td>CWE-416</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-44810">CVE-2026-44810</a></td>
+      <td>8.4</td>
+      <td>CWE-287</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-44811">CVE-2026-44811</a></td>
+      <td>7.8</td>
+      <td>CWE-122</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-44812">CVE-2026-44812</a></td>
+      <td>7.8</td>
+      <td>CWE-190</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-44813">CVE-2026-44813</a></td>
+      <td>7.8</td>
+      <td>CWE-416</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-44814">CVE-2026-44814</a></td>
+      <td>5.5</td>
+      <td>CWE-125</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-44815">CVE-2026-44815</a></td>
+      <td>9.8</td>
+      <td>CWE-121</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-44817">CVE-2026-44817</a></td>
+      <td>7.8</td>
+      <td>CWE-843</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-44818">CVE-2026-44818</a></td>
+      <td>7.0</td>
+      <td>CWE-362</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-44819">CVE-2026-44819</a></td>
+      <td>7.8</td>
+      <td>CWE-122</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-44820">CVE-2026-44820</a></td>
+      <td>7.8</td>
+      <td>CWE-125</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-44821">CVE-2026-44821</a></td>
+      <td>5.5</td>
+      <td>CWE-125</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-44822">CVE-2026-44822</a></td>
+      <td>8.2</td>
+      <td>CWE-125</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-44823">CVE-2026-44823</a></td>
+      <td>7.8</td>
+      <td>CWE-197</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-44824">CVE-2026-44824</a></td>
+      <td>7.8</td>
+      <td>CWE-122</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-44967">CVE-2026-44967</a></td>
+      <td>5.3</td>
+      <td>CWE-789</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-45445">CVE-2026-45445</a></td>
+      <td>7.5</td>
+      <td>CWE-325</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-45446">CVE-2026-45446</a></td>
+      <td>4.8</td>
+      <td>CWE-325</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-45447">CVE-2026-45447</a></td>
+      <td>8.8</td>
+      <td>CWE-416</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-45453">CVE-2026-45453</a></td>
+      <td>5.4</td>
+      <td>CWE-79</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-45454">CVE-2026-45454</a></td>
+      <td>6.5</td>
+      <td>CWE-22</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-45455">CVE-2026-45455</a></td>
+      <td>3.3</td>
+      <td>CWE-125</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-45456">CVE-2026-45456</a></td>
+      <td>8.4</td>
+      <td>CWE-843</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-45457">CVE-2026-45457</a></td>
+      <td>7.8</td>
+      <td>CWE-125</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-45458">CVE-2026-45458</a></td>
+      <td>8.4</td>
+      <td>CWE-416</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-45459">CVE-2026-45459</a></td>
+      <td>3.3</td>
+      <td>CWE-693</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-45460">CVE-2026-45460</a></td>
+      <td>4.7</td>
+      <td>CWE-126</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-45461">CVE-2026-45461</a></td>
+      <td>8.4</td>
+      <td>CWE-416</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-45462">CVE-2026-45462</a></td>
+      <td>4.6</td>
+      <td>CWE-79</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-45463">CVE-2026-45463</a></td>
+      <td>8.4</td>
+      <td>CWE-191</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-45464">CVE-2026-45464</a></td>
+      <td>5.4</td>
+      <td>CWE-79</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-45465">CVE-2026-45465</a></td>
+      <td>5.4</td>
+      <td>CWE-79</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-45466">CVE-2026-45466</a></td>
+      <td>3.3</td>
+      <td>CWE-122</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-45467">CVE-2026-45467</a></td>
+      <td>4.6</td>
+      <td>CWE-79</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-45468">CVE-2026-45468</a></td>
+      <td>4.6</td>
+      <td>CWE-79</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-45469">CVE-2026-45469</a></td>
+      <td>7.8</td>
+      <td>CWE-191</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-45471">CVE-2026-45471</a></td>
+      <td>7.8</td>
+      <td>CWE-822</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-45472">CVE-2026-45472</a></td>
+      <td>8.4</td>
+      <td>CWE-416</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-45474">CVE-2026-45474</a></td>
+      <td>8.4</td>
+      <td>CWE-416</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-45475">CVE-2026-45475</a></td>
+      <td>7.8</td>
+      <td>CWE-122</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-45476">CVE-2026-45476</a></td>
+      <td>8.2</td>
+      <td>CWE-416</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-45479">CVE-2026-45479</a></td>
+      <td>4.6</td>
+      <td>CWE-79</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-45480">CVE-2026-45480</a></td>
+      <td>10.0</td>
+      <td>CWE-287</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-45481">CVE-2026-45481</a></td>
+      <td>7.3</td>
+      <td>CWE-79</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-45482">CVE-2026-45482</a></td>
+      <td>8.4</td>
+      <td>CWE-22</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-45483">CVE-2026-45483</a></td>
+      <td>4.6</td>
+      <td>CWE-79</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-45484">CVE-2026-45484</a></td>
+      <td>8.8</td>
+      <td>CWE-502</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-45485">CVE-2026-45485</a></td>
+      <td>3.3</td>
+      <td>CWE-125</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-45486">CVE-2026-45486</a></td>
+      <td>7.8</td>
+      <td>CWE-416</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-45487">CVE-2026-45487</a></td>
+      <td>7.8</td>
+      <td>CWE-367</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-45490">CVE-2026-45490</a></td>
+      <td>7.8</td>
+      <td>CWE-285</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-45491">CVE-2026-45491</a></td>
+      <td>6.2</td>
+      <td>CWE-59</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-45497">CVE-2026-45497</a></td>
+      <td>7.7</td>
+      <td>CWE-77</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-45500">CVE-2026-45500</a></td>
+      <td>6.1</td>
+      <td>CWE-79</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-45501">CVE-2026-45501</a></td>
+      <td>6.5</td>
+      <td>CWE-918</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-45502">CVE-2026-45502</a></td>
+      <td>5.0</td>
+      <td>CWE-918</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-45503">CVE-2026-45503</a></td>
+      <td>8.1</td>
+      <td>CWE-285</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-45504">CVE-2026-45504</a></td>
+      <td>8.8</td>
+      <td>CWE-918</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-45583">CVE-2026-45583</a></td>
+      <td>7.5</td>
+      <td>CWE-94</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-45586">CVE-2026-45586</a></td>
+      <td>7.8</td>
+      <td>CWE-59</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-45588">CVE-2026-45588</a></td>
+      <td>7.9</td>
+      <td>CWE-693</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-45591">CVE-2026-45591</a></td>
+      <td>7.5</td>
+      <td>CWE-400</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-45592">CVE-2026-45592</a></td>
+      <td>7.8</td>
+      <td>CWE-190</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-45593">CVE-2026-45593</a></td>
+      <td>7.8</td>
+      <td>CWE-416</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-45594">CVE-2026-45594</a></td>
+      <td>5.5</td>
+      <td>CWE-200</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-45595">CVE-2026-45595</a></td>
+      <td>5.4</td>
+      <td>CWE-693</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-45596">CVE-2026-45596</a></td>
+      <td>7.0</td>
+      <td>CWE-416</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-45597">CVE-2026-45597</a></td>
+      <td>7.0</td>
+      <td>CWE-362</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-45598">CVE-2026-45598</a></td>
+      <td>7.0</td>
+      <td>CWE-362</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-45599">CVE-2026-45599</a></td>
+      <td>8.1</td>
+      <td>CWE-416</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-45600">CVE-2026-45600</a></td>
+      <td>7.8</td>
+      <td>CWE-843</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-45601">CVE-2026-45601</a></td>
+      <td>7.0</td>
+      <td>CWE-362</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-45602">CVE-2026-45602</a></td>
+      <td>9.1</td>
+      <td>CWE-349</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-45603">CVE-2026-45603</a></td>
+      <td>7.0</td>
+      <td>CWE-362</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-45604">CVE-2026-45604</a></td>
+      <td>5.5</td>
+      <td>CWE-125</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-45605">CVE-2026-45605</a></td>
+      <td>7.8</td>
+      <td>CWE-416</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-45606">CVE-2026-45606</a></td>
+      <td>5.5</td>
+      <td>CWE-125</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-45607">CVE-2026-45607</a></td>
+      <td>8.4</td>
+      <td>CWE-125</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-45608">CVE-2026-45608</a></td>
+      <td>6.8</td>
+      <td>CWE-125</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-45634">CVE-2026-45634</a></td>
+      <td>5.5</td>
+      <td>CWE-125</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-45635">CVE-2026-45635</a></td>
+      <td>8.1</td>
+      <td>CWE-843</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-45636">CVE-2026-45636</a></td>
+      <td>7.8</td>
+      <td>CWE-122</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-45637">CVE-2026-45637</a></td>
+      <td>7.8</td>
+      <td>CWE-416</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-45638">CVE-2026-45638</a></td>
+      <td>7.8</td>
+      <td>CWE-122</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-45639">CVE-2026-45639</a></td>
+      <td>7.5</td>
+      <td>CWE-125</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-45640">CVE-2026-45640</a></td>
+      <td>7.0</td>
+      <td>CWE-416</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-45641">CVE-2026-45641</a></td>
+      <td>8.4</td>
+      <td>CWE-843</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-45642">CVE-2026-45642</a></td>
+      <td>3.9</td>
+      <td>CWE-20</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-45643">CVE-2026-45643</a></td>
+      <td>7.8</td>
+      <td>CWE-822</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-45644">CVE-2026-45644</a></td>
+      <td>8.0</td>
+      <td>CWE-79</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-45645">CVE-2026-45645</a></td>
+      <td>7.8</td>
+      <td>CWE-822</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-45647">CVE-2026-45647</a></td>
+      <td>5.5</td>
+      <td>CWE-367</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-45648">CVE-2026-45648</a></td>
+      <td>8.8</td>
+      <td>CWE-121</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-45649">CVE-2026-45649</a></td>
+      <td>7.1</td>
+      <td>CWE-284</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-45650">CVE-2026-45650</a></td>
+      <td>4.3</td>
+      <td>CWE-451</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-45653">CVE-2026-45653</a></td>
+      <td>7.0</td>
+      <td>CWE-122</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-45654">CVE-2026-45654</a></td>
+      <td>7.9</td>
+      <td>CWE-284</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-45655">CVE-2026-45655</a></td>
+      <td>5.3</td>
+      <td>CWE-693</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-45656">CVE-2026-45656</a></td>
+      <td>7.8</td>
+      <td>CWE-693</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-45657">CVE-2026-45657</a></td>
+      <td>9.8</td>
+      <td>CWE-416</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-45658">CVE-2026-45658</a></td>
+      <td>7.8</td>
+      <td>CWE-284</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-46243">CVE-2026-46243</a></td>
+      <td>7.8</td>
+      <td>CWE-20</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-46244">CVE-2026-46244</a></td>
+      <td>7.0</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-46245">CVE-2026-46245</a></td>
+      <td>4.7</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-46250">CVE-2026-46250</a></td>
+      <td>4.4</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-46252">CVE-2026-46252</a></td>
+      <td>3.4</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-46254">CVE-2026-46254</a></td>
+      <td>5.5</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-46272">CVE-2026-46272</a></td>
+      <td>3.9</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-46273">CVE-2026-46273</a></td>
+      <td>5.5</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-46274">CVE-2026-46274</a></td>
+      <td>7.8</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-46275">CVE-2026-46275</a></td>
+      <td>7.0</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-46280">CVE-2026-46280</a></td>
+      <td>5.5</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-46282">CVE-2026-46282</a></td>
+      <td>5.5</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-46285">CVE-2026-46285</a></td>
+      <td>7.1</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-46287">CVE-2026-46287</a></td>
+      <td>5.5</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-46289">CVE-2026-46289</a></td>
+      <td>5.5</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-46291">CVE-2026-46291</a></td>
+      <td>5.5</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-46292">CVE-2026-46292</a></td>
+      <td>5.5</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-46293">CVE-2026-46293</a></td>
+      <td>7.1</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-46296">CVE-2026-46296</a></td>
+      <td>5.5</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-46299">CVE-2026-46299</a></td>
+      <td>5.5</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-46301">CVE-2026-46301</a></td>
+      <td>7.8</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-46302">CVE-2026-46302</a></td>
+      <td>5.5</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-46303">CVE-2026-46303</a></td>
+      <td>5.5</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-46304">CVE-2026-46304</a></td>
+      <td>5.5</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-46306">CVE-2026-46306</a></td>
+      <td>7.0</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-46307">CVE-2026-46307</a></td>
+      <td>5.5</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-46312">CVE-2026-46312</a></td>
+      <td>5.5</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-46314">CVE-2026-46314</a></td>
+      <td>5.5</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-46319">CVE-2026-46319</a></td>
+      <td>7.0</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-46320">CVE-2026-46320</a></td>
+      <td>7.1</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-46321">CVE-2026-46321</a></td>
+      <td>5.5</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-46322">CVE-2026-46322</a></td>
+      <td>6.1</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-46323">CVE-2026-46323</a></td>
+      <td>6.6</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-46324">CVE-2026-46324</a></td>
+      <td>7.8</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-46325">CVE-2026-46325</a></td>
+      <td>6.1</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-46330">CVE-2026-46330</a></td>
+      <td>7.1</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-46331">CVE-2026-46331</a></td>
+      <td>8.1</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-46433">CVE-2026-46433</a></td>
+      <td>6.5</td>
+      <td>CWE-125</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-46643">CVE-2026-46643</a></td>
+      <td>n/a</td>
+      <td>CWE-78</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-46683">CVE-2026-46683</a></td>
+      <td>n/a</td>
+      <td>CWE-918</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-47162">CVE-2026-47162</a></td>
+      <td>n/a</td>
+      <td>CWE-74</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-47167">CVE-2026-47167</a></td>
+      <td>n/a</td>
+      <td>CWE-94</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-47281">CVE-2026-47281</a></td>
+      <td>9.6</td>
+      <td>CWE-862</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-47284">CVE-2026-47284</a></td>
+      <td>6.5</td>
+      <td>CWE-200</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-47287">CVE-2026-47287</a></td>
+      <td>6.5</td>
+      <td>CWE-23</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-47288">CVE-2026-47288</a></td>
+      <td>7.1</td>
+      <td>CWE-190</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-47289">CVE-2026-47289</a></td>
+      <td>8.8</td>
+      <td>CWE-122</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-47291">CVE-2026-47291</a></td>
+      <td>9.8</td>
+      <td>CWE-190</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-47292">CVE-2026-47292</a></td>
+      <td>7.8</td>
+      <td>CWE-829</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-47293">CVE-2026-47293</a></td>
+      <td>7.0</td>
+      <td>CWE-416</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-47298">CVE-2026-47298</a></td>
+      <td>8.0</td>
+      <td>CWE-285</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-47631">CVE-2026-47631</a></td>
+      <td>8.1</td>
+      <td>CWE-79</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-47633">CVE-2026-47633</a></td>
+      <td>7.5</td>
+      <td>CWE-200</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-47634">CVE-2026-47634</a></td>
+      <td>7.3</td>
+      <td>CWE-74</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-47635">CVE-2026-47635</a></td>
+      <td>8.4</td>
+      <td>CWE-122</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-47636">CVE-2026-47636</a></td>
+      <td>5.4</td>
+      <td>CWE-79</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-47637">CVE-2026-47637</a></td>
+      <td>4.6</td>
+      <td>CWE-79</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-47638">CVE-2026-47638</a></td>
+      <td>4.6</td>
+      <td>CWE-79</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-47639">CVE-2026-47639</a></td>
+      <td>5.4</td>
+      <td>CWE-79</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-47640">CVE-2026-47640</a></td>
+      <td>4.6</td>
+      <td>CWE-79</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-47641">CVE-2026-47641</a></td>
+      <td>4.6</td>
+      <td>CWE-20</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-47643">CVE-2026-47643</a></td>
+      <td>9.8</td>
+      <td>CWE-73</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-47644">CVE-2026-47644</a></td>
+      <td>6.5</td>
+      <td>CWE-74</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-47645">CVE-2026-47645</a></td>
+      <td>8.8</td>
+      <td>CWE-601</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-47646">CVE-2026-47646</a></td>
+      <td>9.3</td>
+      <td>CWE-79</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-47647">CVE-2026-47647</a></td>
+      <td>9.9</td>
+      <td>CWE-284</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-47648">CVE-2026-47648</a></td>
+      <td>7.0</td>
+      <td>CWE-426</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-47652">CVE-2026-47652</a></td>
+      <td>8.2</td>
+      <td>CWE-122</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-47653">CVE-2026-47653</a></td>
+      <td>8.8</td>
+      <td>CWE-416</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-47654">CVE-2026-47654</a></td>
+      <td>7.5</td>
+      <td>CWE-416</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-47655">CVE-2026-47655</a></td>
+      <td>6.5</td>
+      <td>CWE-200</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-47656">CVE-2026-47656</a></td>
+      <td>7.9</td>
+      <td>CWE-693</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-48560">CVE-2026-48560</a></td>
+      <td>5.4</td>
+      <td>CWE-502</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-48562">CVE-2026-48562</a></td>
+      <td>4.6</td>
+      <td>CWE-79</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-48563">CVE-2026-48563</a></td>
+      <td>7.5</td>
+      <td>CWE-416</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-48565">CVE-2026-48565</a></td>
+      <td>7.8</td>
+      <td>CWE-426</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-48566">CVE-2026-48566</a></td>
+      <td>5.5</td>
+      <td>CWE-125</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-48567">CVE-2026-48567</a></td>
+      <td>10.0</td>
+      <td>CWE-290</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-48568">CVE-2026-48568</a></td>
+      <td>7.9</td>
+      <td>CWE-693</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-48569">CVE-2026-48569</a></td>
+      <td>7.1</td>
+      <td>CWE-20</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-48570">CVE-2026-48570</a></td>
+      <td>7.9</td>
+      <td>CWE-693</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-48573">CVE-2026-48573</a></td>
+      <td>7.9</td>
+      <td>CWE-1329</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-48574">CVE-2026-48574</a></td>
+      <td>7.8</td>
+      <td>CWE-122</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-48575">CVE-2026-48575</a></td>
+      <td>7.9</td>
+      <td>CWE-693</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-48576">CVE-2026-48576</a></td>
+      <td>7.9</td>
+      <td>CWE-1329</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-48578">CVE-2026-48578</a></td>
+      <td>7.9</td>
+      <td>CWE-284</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-48579">CVE-2026-48579</a></td>
+      <td>9.1</td>
+      <td>CWE-285</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-48582">CVE-2026-48582</a></td>
+      <td>9.6</td>
+      <td>CWE-862</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-48583">CVE-2026-48583</a></td>
+      <td>7.8</td>
+      <td>CWE-416</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-48584">CVE-2026-48584</a></td>
+      <td>9.9</td>
+      <td>CWE-250</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-48854">CVE-2026-48854</a></td>
+      <td>n/a</td>
+      <td>CWE-770</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-48855">CVE-2026-48855</a></td>
+      <td>6.5</td>
+      <td>CWE-200</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-48856">CVE-2026-48856</a></td>
+      <td>6.5</td>
+      <td>CWE-601</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-48858">CVE-2026-48858</a></td>
+      <td>6.5</td>
+      <td>CWE-918</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-48860">CVE-2026-48860</a></td>
+      <td>6.5</td>
+      <td>CWE-1025</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-48913">CVE-2026-48913</a></td>
+      <td>7.3</td>
+      <td>CWE-416</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-48914">CVE-2026-48914</a></td>
+      <td>6.7</td>
+      <td>CWE-122</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-49160">CVE-2026-49160</a></td>
+      <td>7.5</td>
+      <td>CWE-400</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-49161">CVE-2026-49161</a></td>
+      <td>7.8</td>
+      <td>CWE-284</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-49759">CVE-2026-49759</a></td>
+      <td>8.2</td>
+      <td>CWE-121</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-49760">CVE-2026-49760</a></td>
+      <td>5.5</td>
+      <td>CWE-121</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-49762">CVE-2026-49762</a></td>
+      <td>n/a</td>
+      <td>CWE-400</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-49975">CVE-2026-49975</a></td>
+      <td>7.5</td>
+      <td>CWE-789</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-50031">CVE-2026-50031</a></td>
+      <td>7.5</td>
+      <td>CWE-121</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-50219">CVE-2026-50219</a></td>
+      <td>4.9</td>
+      <td>CWE-416</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-50256">CVE-2026-50256</a></td>
+      <td>7.8</td>
+      <td>CWE-121</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-50257">CVE-2026-50257</a></td>
+      <td>6.6</td>
+      <td>CWE-416</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-50258">CVE-2026-50258</a></td>
+      <td>7.8</td>
+      <td>CWE-121</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-50259">CVE-2026-50259</a></td>
+      <td>7.8</td>
+      <td>CWE-121</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-50260">CVE-2026-50260</a></td>
+      <td>6.6</td>
+      <td>CWE-416</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-50261">CVE-2026-50261</a></td>
+      <td>7.8</td>
+      <td>CWE-416</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-50262">CVE-2026-50262</a></td>
+      <td>5.5</td>
+      <td>CWE-125</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-50263">CVE-2026-50263</a></td>
+      <td>5.5</td>
+      <td>CWE-416</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-50265">CVE-2026-50265</a></td>
+      <td>5.3</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-50292">CVE-2026-50292</a></td>
+      <td>7.4</td>
+      <td>CWE-93</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-50507">CVE-2026-50507</a></td>
+      <td>6.8</td>
+      <td>CWE-306</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-50508">CVE-2026-50508</a></td>
+      <td>6.5</td>
+      <td>CWE-200</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-50511">CVE-2026-50511</a></td>
+      <td>7.8</td>
+      <td>CWE-59</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-50512">CVE-2026-50512</a></td>
+      <td>7.8</td>
+      <td>CWE-306</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-50519">CVE-2026-50519</a></td>
+      <td>6.5</td>
+      <td>CWE-1188</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-50521">CVE-2026-50521</a></td>
+      <td>8.3</td>
+      <td>CWE-416</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-50656">CVE-2026-50656</a></td>
+      <td>7.8</td>
+      <td>CWE-59</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-52858">CVE-2026-52858</a></td>
+      <td>n/a</td>
+      <td>CWE-94</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-52859">CVE-2026-52859</a></td>
+      <td>n/a</td>
+      <td>CWE-125</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-52860">CVE-2026-52860</a></td>
+      <td>n/a</td>
+      <td>CWE-94</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-53689">CVE-2026-53689</a></td>
+      <td>7.1</td>
+      <td>CWE-1284</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-54130">CVE-2026-54130</a></td>
+      <td>9.8</td>
+      <td>CWE-306</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-5419">CVE-2026-5419</a></td>
+      <td>3.7</td>
+      <td>CWE-208</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-54411">CVE-2026-54411</a></td>
+      <td>5.9</td>
+      <td>CWE-208</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-6893">CVE-2026-6893</a></td>
+      <td>8.8</td>
+      <td>CWE-78</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-7383">CVE-2026-7383</a></td>
+      <td>8.1</td>
+      <td>CWE-787</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-7774">CVE-2026-7774</a></td>
+      <td>n/a</td>
+      <td>CWE-22</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-8643">CVE-2026-8643</a></td>
+      <td>n/a</td>
+      <td>CWE-22</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-8829">CVE-2026-8829</a></td>
+      <td>7.5</td>
+      <td>CWE-416</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-8863">CVE-2026-8863</a></td>
+      <td>7.8</td>
+      <td>CWE-1329</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-9076">CVE-2026-9076</a></td>
+      <td>7.5</td>
+      <td>CWE-125</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-9669">CVE-2026-9669</a></td>
+      <td>n/a</td>
+      <td>CWE-121</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-9698">CVE-2026-9698</a></td>
+      <td>8.8</td>
+      <td>CWE-787</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+
+<h2>Windows Updates &amp; Verdict</h2>
+<table>
+  <thead>
+    <tr><th>KB</th><th>Product</th><th>Channel</th><th>Supersedes</th><th>Verdict</th></tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>5094122</td>
+      <td>Windows 10 Version 1607 for 32-bit Systems</td>
+      <td>b_release</td>
+      <td>5087537</td>
+      <td>
+        <span class="badge badge-deploy_now">deploy now</span>
+      </td>
+    </tr>
+    <tr>
+      <td>5094122</td>
+      <td>Windows 10 Version 1607 for x64-based Systems</td>
+      <td>b_release</td>
+      <td>5087537</td>
+      <td>
+        <span class="badge badge-deploy_now">deploy now</span>
+      </td>
+    </tr>
+    <tr>
+      <td>5094123</td>
+      <td>Windows 10 Version 1809 for 32-bit Systems</td>
+      <td>b_release</td>
+      <td>5087538</td>
+      <td>
+        <span class="badge badge-deploy_now">deploy now</span>
+      </td>
+    </tr>
+    <tr>
+      <td>5094123</td>
+      <td>Windows 10 Version 1809 for x64-based Systems</td>
+      <td>b_release</td>
+      <td>5087538</td>
+      <td>
+        <span class="badge badge-deploy_now">deploy now</span>
+      </td>
+    </tr>
+    <tr>
+      <td>5094127</td>
+      <td>Windows 10 Version 21H2 for 32-bit Systems</td>
+      <td>b_release</td>
+      <td>5087544</td>
+      <td>
+        <span class="badge badge-deploy_now">deploy now</span>
+      </td>
+    </tr>
+    <tr>
+      <td>5094127</td>
+      <td>Windows 10 Version 21H2 for ARM64-based Systems</td>
+      <td>b_release</td>
+      <td>5087544</td>
+      <td>
+        <span class="badge badge-deploy_now">deploy now</span>
+      </td>
+    </tr>
+    <tr>
+      <td>5094127</td>
+      <td>Windows 10 Version 21H2 for x64-based Systems</td>
+      <td>b_release</td>
+      <td>5087544</td>
+      <td>
+        <span class="badge badge-deploy_now">deploy now</span>
+      </td>
+    </tr>
+    <tr>
+      <td>5093998</td>
+      <td>Windows 11 Version 22H2 for ARM64-based Systems</td>
+      <td>b_release</td>
+      <td>5087420</td>
+      <td>
+        <span class="badge badge-deploy_now">deploy now</span>
+      </td>
+    </tr>
+    <tr>
+      <td>5093998</td>
+      <td>Windows 11 Version 22H2 for x64-based Systems</td>
+      <td>b_release</td>
+      <td>5087420</td>
+      <td>
+        <span class="badge badge-deploy_now">deploy now</span>
+      </td>
+    </tr>
+    <tr>
+      <td>5093998</td>
+      <td>Windows 11 Version 23H2 for ARM64-based Systems</td>
+      <td>b_release</td>
+      <td>5087420</td>
+      <td>
+        <span class="badge badge-deploy_now">deploy now</span>
+      </td>
+    </tr>
+    <tr>
+      <td>5094126</td>
+      <td>Windows 11 Version 24H2 for ARM64-based Systems</td>
+      <td>b_release</td>
+      <td>5089549</td>
+      <td>
+        <span class="badge badge-deploy_now">deploy now</span>
+      </td>
+    </tr>
+    <tr>
+      <td>5094126</td>
+      <td>Windows 11 Version 25H2 for ARM64-based Systems</td>
+      <td>b_release</td>
+      <td>5089549</td>
+      <td>
+        <span class="badge badge-deploy_now">deploy now</span>
+      </td>
+    </tr>
+    <tr>
+      <td>5095051</td>
+      <td>Windows 11 Version 26H1 for ARM64-based Systems</td>
+      <td>b_release</td>
+      <td>—</td>
+      <td>
+        <span class="badge badge-deploy_now">deploy now</span>
+      </td>
+    </tr>
+    <tr>
+      <td>5094042</td>
+      <td>Windows Server 2012</td>
+      <td>b_release</td>
+      <td>5087470</td>
+      <td>
+        <span class="badge badge-deploy_now">deploy now</span>
+      </td>
+    </tr>
+    <tr>
+      <td>5094006</td>
+      <td>Windows Server 2012 R2</td>
+      <td>b_release</td>
+      <td>5082806</td>
+      <td>
+        <span class="badge badge-deploy_now">deploy now</span>
+      </td>
+    </tr>
+    <tr>
+      <td>5094041</td>
+      <td>Windows Server 2012 R2</td>
+      <td>b_release</td>
+      <td>5087471</td>
+      <td>
+        <span class="badge badge-deploy_now">deploy now</span>
+      </td>
+    </tr>
+    <tr>
+      <td>5094122</td>
+      <td>Windows Server 2016</td>
+      <td>b_release</td>
+      <td>5087537</td>
+      <td>
+        <span class="badge badge-deploy_now">deploy now</span>
+      </td>
+    </tr>
+    <tr>
+      <td>5094123</td>
+      <td>Windows Server 2019</td>
+      <td>b_release</td>
+      <td>5087538</td>
+      <td>
+        <span class="badge badge-deploy_now">deploy now</span>
+      </td>
+    </tr>
+    <tr>
+      <td>5094128</td>
+      <td>Windows Server 2022</td>
+      <td>b_release</td>
+      <td>5087545</td>
+      <td>
+        <span class="badge badge-deploy_now">deploy now</span>
+      </td>
+    </tr>
+    <tr>
+      <td>5094126</td>
+      <td>Windows Server 2025</td>
+      <td>b_release</td>
+      <td>5089549</td>
+      <td>
+        <span class="badge badge-deploy_now">deploy now</span>
+      </td>
+    </tr>
+    <tr>
+      <td>5094127</td>
+      <td>Windows Server, version 2004</td>
+      <td>b_release</td>
+      <td>5087544</td>
+      <td>
+        <span class="badge badge-deploy_now">deploy now</span>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+  <p class="muted"><strong>5094122</strong> rationale: KEV-listed / actively exploited — bypasses field reports and wait days. Always deploy_now, no exceptions.</p>
+  <p class="muted"><strong>5094122</strong> rationale: KEV-listed / actively exploited — bypasses field reports and wait days. Always deploy_now, no exceptions.</p>
+  <p class="muted"><strong>5094123</strong> rationale: KEV-listed / actively exploited — bypasses field reports and wait days. Always deploy_now, no exceptions.</p>
+  <p class="muted"><strong>5094123</strong> rationale: KEV-listed / actively exploited — bypasses field reports and wait days. Always deploy_now, no exceptions.</p>
+  <p class="muted"><strong>5094127</strong> rationale: KEV-listed / actively exploited — bypasses field reports and wait days. Always deploy_now, no exceptions.</p>
+  <p class="muted"><strong>5094127</strong> rationale: KEV-listed / actively exploited — bypasses field reports and wait days. Always deploy_now, no exceptions.</p>
+  <p class="muted"><strong>5094127</strong> rationale: KEV-listed / actively exploited — bypasses field reports and wait days. Always deploy_now, no exceptions.</p>
+  <p class="muted"><strong>5093998</strong> rationale: KEV-listed / actively exploited — bypasses field reports and wait days. Always deploy_now, no exceptions.</p>
+  <p class="muted"><strong>5093998</strong> rationale: KEV-listed / actively exploited — bypasses field reports and wait days. Always deploy_now, no exceptions.</p>
+  <p class="muted"><strong>5093998</strong> rationale: KEV-listed / actively exploited — bypasses field reports and wait days. Always deploy_now, no exceptions.</p>
+  <p class="muted"><strong>5094126</strong> rationale: KEV-listed / actively exploited — bypasses field reports and wait days. Always deploy_now, no exceptions.</p>
+  <p class="muted"><strong>5094126</strong> rationale: KEV-listed / actively exploited — bypasses field reports and wait days. Always deploy_now, no exceptions.</p>
+  <p class="muted"><strong>5095051</strong> rationale: KEV-listed / actively exploited — bypasses field reports and wait days. Always deploy_now, no exceptions.</p>
+  <p class="muted"><strong>5094042</strong> rationale: KEV-listed / actively exploited — bypasses field reports and wait days. Always deploy_now, no exceptions.</p>
+  <p class="muted"><strong>5094006</strong> rationale: KEV-listed / actively exploited — bypasses field reports and wait days. Always deploy_now, no exceptions.</p>
+  <p class="muted"><strong>5094041</strong> rationale: KEV-listed / actively exploited — bypasses field reports and wait days. Always deploy_now, no exceptions.</p>
+  <p class="muted"><strong>5094122</strong> rationale: KEV-listed / actively exploited — bypasses field reports and wait days. Always deploy_now, no exceptions.</p>
+  <p class="muted"><strong>5094123</strong> rationale: KEV-listed / actively exploited — bypasses field reports and wait days. Always deploy_now, no exceptions.</p>
+  <p class="muted"><strong>5094128</strong> rationale: KEV-listed / actively exploited — bypasses field reports and wait days. Always deploy_now, no exceptions.</p>
+  <p class="muted"><strong>5094126</strong> rationale: KEV-listed / actively exploited — bypasses field reports and wait days. Always deploy_now, no exceptions.</p>
+  <p class="muted"><strong>5094127</strong> rationale: KEV-listed / actively exploited — bypasses field reports and wait days. Always deploy_now, no exceptions.</p>
+
+</main>
+<footer>
+  <p>Structured vendor advisory data only — no AI-generated narrative in this view.
+  Generated 2026-07-01 21:24 UTC.</p>
+</footer>
+</body>
+</html>
