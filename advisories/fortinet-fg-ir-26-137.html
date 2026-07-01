@@ -1,0 +1,673 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="dark">
+<title>DoS due to unsafe function in signal handler — Advisory Engine</title>
+<link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="page">
+    <a class="brand" href="/">Advisory Engine</a>
+    <nav class="site-nav">
+      <a href="/">Home</a>
+      <a href="/digest/">Patch Tuesday Digest</a>
+    </nav>
+  </div>
+</header>
+<div class="page">
+<main>
+<p><a href="/">&larr; Home</a></p>
+<h1>DoS due to unsafe function in signal handler</h1>
+<p class="byline">
+  Source: fortinet / FG-IR-26-137
+ — <a href="https://fortiguard.fortinet.com/psirt/FG-IR-26-137">original advisory</a></p>
+<p class="byline">
+  Published: 2026-05-12
+  &middot; Last updated: 2026-05-12
+  &middot; Vendor severity: Not rated by vendor
+  
+</p>
+
+<h2>CVEs</h2>
+<div class="table-wrap table-wrap--cards">
+<table class="table-cves">
+  <thead>
+    <tr><th>CVE</th><th>CVSS</th><th>CWE</th><th>Exploitation</th></tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2025-67604">CVE-2025-67604</a></td>
+      <td>5.2</td>
+      <td>CWE-676</td>
+      <td>
+        
+<span class="muted">Not observed in the wild</span>      </td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+
+
+<h2>Affected Products</h2>
+<div class="table-wrap">
+<table>
+  <thead>
+    <tr><th>Product</th><th>Affected versions</th><th>Fixed version</th></tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>FortiAnalyzer</td>
+      <td>7.6.4</td>
+      <td>Not specified by vendor</td>
+    </tr>
+    <tr>
+      <td>FortiAnalyzer</td>
+      <td>7.6.3</td>
+      <td>Not specified by vendor</td>
+    </tr>
+    <tr>
+      <td>FortiAnalyzer</td>
+      <td>7.6.2</td>
+      <td>Not specified by vendor</td>
+    </tr>
+    <tr>
+      <td>FortiAnalyzer</td>
+      <td>7.6.1</td>
+      <td>Not specified by vendor</td>
+    </tr>
+    <tr>
+      <td>FortiAnalyzer</td>
+      <td>7.6.0</td>
+      <td>Not specified by vendor</td>
+    </tr>
+    <tr>
+      <td>FortiAnalyzer</td>
+      <td>7.4.8</td>
+      <td>Not specified by vendor</td>
+    </tr>
+    <tr>
+      <td>FortiAnalyzer</td>
+      <td>7.4.7</td>
+      <td>Not specified by vendor</td>
+    </tr>
+    <tr>
+      <td>FortiAnalyzer</td>
+      <td>7.4.6</td>
+      <td>Not specified by vendor</td>
+    </tr>
+    <tr>
+      <td>FortiAnalyzer</td>
+      <td>7.4.5</td>
+      <td>Not specified by vendor</td>
+    </tr>
+    <tr>
+      <td>FortiAnalyzer</td>
+      <td>7.4.4</td>
+      <td>Not specified by vendor</td>
+    </tr>
+    <tr>
+      <td>FortiAnalyzer</td>
+      <td>7.4.3</td>
+      <td>Not specified by vendor</td>
+    </tr>
+    <tr>
+      <td>FortiAnalyzer</td>
+      <td>7.4.2</td>
+      <td>Not specified by vendor</td>
+    </tr>
+    <tr>
+      <td>FortiAnalyzer</td>
+      <td>7.4.1</td>
+      <td>Not specified by vendor</td>
+    </tr>
+    <tr>
+      <td>FortiAnalyzer</td>
+      <td>7.4.0</td>
+      <td>Not specified by vendor</td>
+    </tr>
+    <tr>
+      <td>FortiAnalyzer</td>
+      <td>7.2.12</td>
+      <td>Not specified by vendor</td>
+    </tr>
+    <tr>
+      <td>FortiAnalyzer</td>
+      <td>7.2.11</td>
+      <td>Not specified by vendor</td>
+    </tr>
+    <tr>
+      <td>FortiAnalyzer</td>
+      <td>7.2.10</td>
+      <td>Not specified by vendor</td>
+    </tr>
+    <tr>
+      <td>FortiAnalyzer</td>
+      <td>7.2.9</td>
+      <td>Not specified by vendor</td>
+    </tr>
+    <tr>
+      <td>FortiAnalyzer</td>
+      <td>7.2.8</td>
+      <td>Not specified by vendor</td>
+    </tr>
+    <tr>
+      <td>FortiAnalyzer</td>
+      <td>7.2.7</td>
+      <td>Not specified by vendor</td>
+    </tr>
+    <tr>
+      <td>FortiAnalyzer</td>
+      <td>7.2.6</td>
+      <td>Not specified by vendor</td>
+    </tr>
+    <tr>
+      <td>FortiAnalyzer</td>
+      <td>7.2.5</td>
+      <td>Not specified by vendor</td>
+    </tr>
+    <tr>
+      <td>FortiAnalyzer</td>
+      <td>7.2.4</td>
+      <td>Not specified by vendor</td>
+    </tr>
+    <tr>
+      <td>FortiAnalyzer</td>
+      <td>7.2.3</td>
+      <td>Not specified by vendor</td>
+    </tr>
+    <tr>
+      <td>FortiAnalyzer</td>
+      <td>7.2.2</td>
+      <td>Not specified by vendor</td>
+    </tr>
+    <tr>
+      <td>FortiAnalyzer</td>
+      <td>7.2.1</td>
+      <td>Not specified by vendor</td>
+    </tr>
+    <tr>
+      <td>FortiAnalyzer</td>
+      <td>7.2.0</td>
+      <td>Not specified by vendor</td>
+    </tr>
+    <tr>
+      <td>FortiAnalyzer</td>
+      <td>7.0.16</td>
+      <td>Not specified by vendor</td>
+    </tr>
+    <tr>
+      <td>FortiAnalyzer</td>
+      <td>7.0.15</td>
+      <td>Not specified by vendor</td>
+    </tr>
+    <tr>
+      <td>FortiAnalyzer</td>
+      <td>7.0.14</td>
+      <td>Not specified by vendor</td>
+    </tr>
+    <tr>
+      <td>FortiAnalyzer</td>
+      <td>7.0.13</td>
+      <td>Not specified by vendor</td>
+    </tr>
+    <tr>
+      <td>FortiAnalyzer</td>
+      <td>7.0.12</td>
+      <td>Not specified by vendor</td>
+    </tr>
+    <tr>
+      <td>FortiAnalyzer</td>
+      <td>7.0.11</td>
+      <td>Not specified by vendor</td>
+    </tr>
+    <tr>
+      <td>FortiAnalyzer</td>
+      <td>7.0.10</td>
+      <td>Not specified by vendor</td>
+    </tr>
+    <tr>
+      <td>FortiAnalyzer</td>
+      <td>7.0.9</td>
+      <td>Not specified by vendor</td>
+    </tr>
+    <tr>
+      <td>FortiAnalyzer</td>
+      <td>7.0.8</td>
+      <td>Not specified by vendor</td>
+    </tr>
+    <tr>
+      <td>FortiAnalyzer</td>
+      <td>7.0.7</td>
+      <td>Not specified by vendor</td>
+    </tr>
+    <tr>
+      <td>FortiAnalyzer</td>
+      <td>7.0.6</td>
+      <td>Not specified by vendor</td>
+    </tr>
+    <tr>
+      <td>FortiAnalyzer</td>
+      <td>7.0.5</td>
+      <td>Not specified by vendor</td>
+    </tr>
+    <tr>
+      <td>FortiAnalyzer</td>
+      <td>7.0.4</td>
+      <td>Not specified by vendor</td>
+    </tr>
+    <tr>
+      <td>FortiAnalyzer</td>
+      <td>7.0.3</td>
+      <td>Not specified by vendor</td>
+    </tr>
+    <tr>
+      <td>FortiAnalyzer</td>
+      <td>7.0.2</td>
+      <td>Not specified by vendor</td>
+    </tr>
+    <tr>
+      <td>FortiAnalyzer</td>
+      <td>7.0.1</td>
+      <td>Not specified by vendor</td>
+    </tr>
+    <tr>
+      <td>FortiAnalyzer</td>
+      <td>7.0.0</td>
+      <td>Not specified by vendor</td>
+    </tr>
+    <tr>
+      <td>FortiAnalyzer</td>
+      <td>6.4.15</td>
+      <td>Not specified by vendor</td>
+    </tr>
+    <tr>
+      <td>FortiAnalyzer</td>
+      <td>6.4.14</td>
+      <td>Not specified by vendor</td>
+    </tr>
+    <tr>
+      <td>FortiAnalyzer</td>
+      <td>6.4.13</td>
+      <td>Not specified by vendor</td>
+    </tr>
+    <tr>
+      <td>FortiAnalyzer</td>
+      <td>6.4.12</td>
+      <td>Not specified by vendor</td>
+    </tr>
+    <tr>
+      <td>FortiAnalyzer</td>
+      <td>6.4.11</td>
+      <td>Not specified by vendor</td>
+    </tr>
+    <tr>
+      <td>FortiAnalyzer</td>
+      <td>6.4.10</td>
+      <td>Not specified by vendor</td>
+    </tr>
+    <tr>
+      <td>FortiAnalyzer</td>
+      <td>6.4.9</td>
+      <td>Not specified by vendor</td>
+    </tr>
+    <tr>
+      <td>FortiAnalyzer</td>
+      <td>6.4.8</td>
+      <td>Not specified by vendor</td>
+    </tr>
+    <tr>
+      <td>FortiAnalyzer</td>
+      <td>6.4.7</td>
+      <td>Not specified by vendor</td>
+    </tr>
+    <tr>
+      <td>FortiAnalyzer</td>
+      <td>6.4.6</td>
+      <td>Not specified by vendor</td>
+    </tr>
+    <tr>
+      <td>FortiAnalyzer</td>
+      <td>6.4.5</td>
+      <td>Not specified by vendor</td>
+    </tr>
+    <tr>
+      <td>FortiAnalyzer</td>
+      <td>6.4.4</td>
+      <td>Not specified by vendor</td>
+    </tr>
+    <tr>
+      <td>FortiAnalyzer</td>
+      <td>6.4.3</td>
+      <td>Not specified by vendor</td>
+    </tr>
+    <tr>
+      <td>FortiAnalyzer</td>
+      <td>6.4.2</td>
+      <td>Not specified by vendor</td>
+    </tr>
+    <tr>
+      <td>FortiAnalyzer</td>
+      <td>6.4.1</td>
+      <td>Not specified by vendor</td>
+    </tr>
+    <tr>
+      <td>FortiAnalyzer</td>
+      <td>6.4.0</td>
+      <td>Not specified by vendor</td>
+    </tr>
+    <tr>
+      <td>FortiManager</td>
+      <td>7.6.4</td>
+      <td>Not specified by vendor</td>
+    </tr>
+    <tr>
+      <td>FortiManager</td>
+      <td>7.6.3</td>
+      <td>Not specified by vendor</td>
+    </tr>
+    <tr>
+      <td>FortiManager</td>
+      <td>7.6.2</td>
+      <td>Not specified by vendor</td>
+    </tr>
+    <tr>
+      <td>FortiManager</td>
+      <td>7.6.1</td>
+      <td>Not specified by vendor</td>
+    </tr>
+    <tr>
+      <td>FortiManager</td>
+      <td>7.6.0</td>
+      <td>Not specified by vendor</td>
+    </tr>
+    <tr>
+      <td>FortiManager</td>
+      <td>7.4.8</td>
+      <td>Not specified by vendor</td>
+    </tr>
+    <tr>
+      <td>FortiManager</td>
+      <td>7.4.7</td>
+      <td>Not specified by vendor</td>
+    </tr>
+    <tr>
+      <td>FortiManager</td>
+      <td>7.4.6</td>
+      <td>Not specified by vendor</td>
+    </tr>
+    <tr>
+      <td>FortiManager</td>
+      <td>7.4.5</td>
+      <td>Not specified by vendor</td>
+    </tr>
+    <tr>
+      <td>FortiManager</td>
+      <td>7.4.4</td>
+      <td>Not specified by vendor</td>
+    </tr>
+    <tr>
+      <td>FortiManager</td>
+      <td>7.4.3</td>
+      <td>Not specified by vendor</td>
+    </tr>
+    <tr>
+      <td>FortiManager</td>
+      <td>7.4.2</td>
+      <td>Not specified by vendor</td>
+    </tr>
+    <tr>
+      <td>FortiManager</td>
+      <td>7.4.1</td>
+      <td>Not specified by vendor</td>
+    </tr>
+    <tr>
+      <td>FortiManager</td>
+      <td>7.4.0</td>
+      <td>Not specified by vendor</td>
+    </tr>
+    <tr>
+      <td>FortiManager</td>
+      <td>7.2.12</td>
+      <td>Not specified by vendor</td>
+    </tr>
+    <tr>
+      <td>FortiManager</td>
+      <td>7.2.11</td>
+      <td>Not specified by vendor</td>
+    </tr>
+    <tr>
+      <td>FortiManager</td>
+      <td>7.2.10</td>
+      <td>Not specified by vendor</td>
+    </tr>
+    <tr>
+      <td>FortiManager</td>
+      <td>7.2.9</td>
+      <td>Not specified by vendor</td>
+    </tr>
+    <tr>
+      <td>FortiManager</td>
+      <td>7.2.8</td>
+      <td>Not specified by vendor</td>
+    </tr>
+    <tr>
+      <td>FortiManager</td>
+      <td>7.2.7</td>
+      <td>Not specified by vendor</td>
+    </tr>
+    <tr>
+      <td>FortiManager</td>
+      <td>7.2.6</td>
+      <td>Not specified by vendor</td>
+    </tr>
+    <tr>
+      <td>FortiManager</td>
+      <td>7.2.5</td>
+      <td>Not specified by vendor</td>
+    </tr>
+    <tr>
+      <td>FortiManager</td>
+      <td>7.2.4</td>
+      <td>Not specified by vendor</td>
+    </tr>
+    <tr>
+      <td>FortiManager</td>
+      <td>7.2.3</td>
+      <td>Not specified by vendor</td>
+    </tr>
+    <tr>
+      <td>FortiManager</td>
+      <td>7.2.2</td>
+      <td>Not specified by vendor</td>
+    </tr>
+    <tr>
+      <td>FortiManager</td>
+      <td>7.2.1</td>
+      <td>Not specified by vendor</td>
+    </tr>
+    <tr>
+      <td>FortiManager</td>
+      <td>7.2.0</td>
+      <td>Not specified by vendor</td>
+    </tr>
+    <tr>
+      <td>FortiManager</td>
+      <td>7.0.16</td>
+      <td>Not specified by vendor</td>
+    </tr>
+    <tr>
+      <td>FortiManager</td>
+      <td>7.0.15</td>
+      <td>Not specified by vendor</td>
+    </tr>
+    <tr>
+      <td>FortiManager</td>
+      <td>7.0.14</td>
+      <td>Not specified by vendor</td>
+    </tr>
+    <tr>
+      <td>FortiManager</td>
+      <td>7.0.13</td>
+      <td>Not specified by vendor</td>
+    </tr>
+    <tr>
+      <td>FortiManager</td>
+      <td>7.0.12</td>
+      <td>Not specified by vendor</td>
+    </tr>
+    <tr>
+      <td>FortiManager</td>
+      <td>7.0.11</td>
+      <td>Not specified by vendor</td>
+    </tr>
+    <tr>
+      <td>FortiManager</td>
+      <td>7.0.10</td>
+      <td>Not specified by vendor</td>
+    </tr>
+    <tr>
+      <td>FortiManager</td>
+      <td>7.0.9</td>
+      <td>Not specified by vendor</td>
+    </tr>
+    <tr>
+      <td>FortiManager</td>
+      <td>7.0.8</td>
+      <td>Not specified by vendor</td>
+    </tr>
+    <tr>
+      <td>FortiManager</td>
+      <td>7.0.7</td>
+      <td>Not specified by vendor</td>
+    </tr>
+    <tr>
+      <td>FortiManager</td>
+      <td>7.0.6</td>
+      <td>Not specified by vendor</td>
+    </tr>
+    <tr>
+      <td>FortiManager</td>
+      <td>7.0.5</td>
+      <td>Not specified by vendor</td>
+    </tr>
+    <tr>
+      <td>FortiManager</td>
+      <td>7.0.4</td>
+      <td>Not specified by vendor</td>
+    </tr>
+    <tr>
+      <td>FortiManager</td>
+      <td>7.0.3</td>
+      <td>Not specified by vendor</td>
+    </tr>
+    <tr>
+      <td>FortiManager</td>
+      <td>7.0.2</td>
+      <td>Not specified by vendor</td>
+    </tr>
+    <tr>
+      <td>FortiManager</td>
+      <td>7.0.1</td>
+      <td>Not specified by vendor</td>
+    </tr>
+    <tr>
+      <td>FortiManager</td>
+      <td>7.0.0</td>
+      <td>Not specified by vendor</td>
+    </tr>
+    <tr>
+      <td>FortiManager</td>
+      <td>6.4.15</td>
+      <td>Not specified by vendor</td>
+    </tr>
+    <tr>
+      <td>FortiManager</td>
+      <td>6.4.14</td>
+      <td>Not specified by vendor</td>
+    </tr>
+    <tr>
+      <td>FortiManager</td>
+      <td>6.4.13</td>
+      <td>Not specified by vendor</td>
+    </tr>
+    <tr>
+      <td>FortiManager</td>
+      <td>6.4.12</td>
+      <td>Not specified by vendor</td>
+    </tr>
+    <tr>
+      <td>FortiManager</td>
+      <td>6.4.11</td>
+      <td>Not specified by vendor</td>
+    </tr>
+    <tr>
+      <td>FortiManager</td>
+      <td>6.4.10</td>
+      <td>Not specified by vendor</td>
+    </tr>
+    <tr>
+      <td>FortiManager</td>
+      <td>6.4.9</td>
+      <td>Not specified by vendor</td>
+    </tr>
+    <tr>
+      <td>FortiManager</td>
+      <td>6.4.8</td>
+      <td>Not specified by vendor</td>
+    </tr>
+    <tr>
+      <td>FortiManager</td>
+      <td>6.4.7</td>
+      <td>Not specified by vendor</td>
+    </tr>
+    <tr>
+      <td>FortiManager</td>
+      <td>6.4.6</td>
+      <td>Not specified by vendor</td>
+    </tr>
+    <tr>
+      <td>FortiManager</td>
+      <td>6.4.5</td>
+      <td>Not specified by vendor</td>
+    </tr>
+    <tr>
+      <td>FortiManager</td>
+      <td>6.4.4</td>
+      <td>Not specified by vendor</td>
+    </tr>
+    <tr>
+      <td>FortiManager</td>
+      <td>6.4.3</td>
+      <td>Not specified by vendor</td>
+    </tr>
+    <tr>
+      <td>FortiManager</td>
+      <td>6.4.2</td>
+      <td>Not specified by vendor</td>
+    </tr>
+    <tr>
+      <td>FortiManager</td>
+      <td>6.4.1</td>
+      <td>Not specified by vendor</td>
+    </tr>
+    <tr>
+      <td>FortiManager</td>
+      <td>6.4.0</td>
+      <td>Not specified by vendor</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+</main>
+<footer class="site-footer">
+  <p>Structured vendor advisory data only — no AI-generated narrative in this view.
+  Generated 2026-07-01 22:49 UTC.</p>
+</footer>
+</div>
+</body>
+</html>
