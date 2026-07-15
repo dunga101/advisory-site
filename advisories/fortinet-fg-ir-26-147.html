@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="color-scheme" content="dark">
-<title>Cisco Identity Services Engine Authentication Bypass Vulnerabilities — Advisory Engine</title>
+<title>Missed certificate verification in AD Connector communication with FortiClient EMS — Advisory Engine</title>
 <link rel="stylesheet" href="/static/style.css">
 </head>
 <body>
@@ -20,14 +20,14 @@
 <div class="page">
 <main>
 <p><a href="/">&larr; Home</a></p>
-<h1>Cisco Identity Services Engine Authentication Bypass Vulnerabilities</h1>
+<h1>Missed certificate verification in AD Connector communication with FortiClient EMS</h1>
 <p class="byline">
-  Source: cisco / cisco-sa-ise-unauth-bypass-uxjRXGpb
- — <a href="https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-ise-unauth-bypass-uxjRXGpb">original advisory</a></p>
+  Source: fortinet / FG-IR-26-147
+ — <a href="https://fortiguard.fortinet.com/psirt/FG-IR-26-147">original advisory</a></p>
 <p class="byline">
-  Published: 2026-05-06
-  &middot; Last updated: 2026-05-06
-  &middot; Vendor severity: Medium
+  Published: 2026-07-14
+  &middot; Last updated: 2026-07-14
+  &middot; Vendor severity: Not rated by vendor
   
 </p>
 
@@ -39,17 +39,9 @@
   </thead>
   <tbody>
     <tr>
-      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-20193">CVE-2026-20193</a></td>
-      <td>5.3</td>
-      <td>CWE-204</td>
-      <td>
-        
-<span class="muted">Not observed in the wild</span>      </td>
-    </tr>
-    <tr>
-      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-20195">CVE-2026-20195</a></td>
-      <td>5.3</td>
-      <td>CWE-204</td>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-59836">CVE-2026-59836</a></td>
+      <td>6.7</td>
+      <td>CWE-295: Improper Certificate Validation</td>
       <td>
         
 <span class="muted">Not observed in the wild</span>      </td>
@@ -68,8 +60,18 @@
   </thead>
   <tbody>
     <tr>
-      <td>Cisco Identity Services Engine Software</td>
+      <td>FortiClientEMS</td>
+      <td>FortiClientEMS 7.2</td>
       <td>Not specified by vendor</td>
+    </tr>
+    <tr>
+      <td>FortiClientEMS</td>
+      <td>FortiClientEMS 7.4</td>
+      <td>Not specified by vendor</td>
+    </tr>
+    <tr>
+      <td>FortiClientEMS</td>
+      <td>FortiClientEMS 8.0</td>
       <td>Not specified by vendor</td>
     </tr>
   </tbody>
