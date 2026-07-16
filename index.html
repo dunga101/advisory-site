@@ -30,9 +30,9 @@
   </fieldset>
   <fieldset id="vendor-filter">
     <legend>Vendor (All Advisories)</legend>
+    <label><input type="checkbox" value="cisco" checked> Cisco</label>
     <label><input type="checkbox" value="fortinet" checked> Fortinet</label>
     <label><input type="checkbox" value="microsoft" checked> Microsoft</label>
-    <label><input type="checkbox" value="cisco" checked> Cisco</label>
   </fieldset>
 </aside>
 
@@ -44,7 +44,7 @@ exploited, and whether to deploy now or wait. No AI-generated narrative in this 
 
 <div class="stats-strip">
   <div class="stat-card">
-    <div class="stat-value">97</div>
+    <div class="stat-value">99</div>
     <div class="stat-label">Advisories tracked</div>
   </div>
   <div class="stat-card">
@@ -227,13 +227,27 @@ exploited, and whether to deploy now or wait. No AI-generated narrative in this 
   <li><a href="/advisories/microsoft-2026-jul.html">July 2026 Security Updates</a></li>
 </ul>
 
-<h2>All Published Advisories (97)</h2>
+<h2>All Published Advisories (99)</h2>
 <div class="table-wrap table-wrap--cards">
 <table class="table-advisories">
   <thead>
     <tr><th>Published</th><th>Source</th><th>Advisory</th><th>Max CVSS</th><th>Exploitation</th></tr>
   </thead>
   <tbody>
+    <tr data-vendor="cisco">
+      <td>2026-07-15</td>
+      <td>cisco</td>
+      <td><a href="/advisories/cisco-cisco-sa-ise-traversal-xnt7wb2y.html">Cisco Identity Services Engine Path Traversal Vulnerability</a></td>
+      <td>5.5</td>
+      <td></td>
+    </tr>
+    <tr data-vendor="cisco">
+      <td>2026-07-15</td>
+      <td>cisco</td>
+      <td><a href="/advisories/cisco-cisco-sa-hardening-roomos-aqnmbeq.html">Cisco RoomOS Security Hardening Release: July 2026</a></td>
+      <td>8.8</td>
+      <td></td>
+    </tr>
     <tr data-vendor="fortinet">
       <td>2026-07-14</td>
       <td>fortinet</td>
@@ -942,7 +956,7 @@ exploited, and whether to deploy now or wait. No AI-generated narrative in this 
 </main>
 <footer class="site-footer">
   <p>Structured vendor advisory data only — no AI-generated narrative in this view.
-  Generated 2026-07-15 04:00 UTC.</p>
+  Generated 2026-07-16 04:00 UTC.</p>
 </footer>
 </div>
 </body>
