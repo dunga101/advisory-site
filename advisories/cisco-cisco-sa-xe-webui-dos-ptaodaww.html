@@ -1,0 +1,863 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="dark">
+<title>Cisco IOS XE Software Web-Based Management Interface Denial of Service Vulnerability — Advisory Engine</title>
+<link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="page">
+    <a class="brand" href="/">Advisory Engine</a>
+    <nav class="site-nav">
+      <a href="/">Home</a>
+      <a href="/digest/">Patch Tuesday Digest</a>
+    </nav>
+  </div>
+</header>
+<div class="page">
+<main>
+<p><a href="/">&larr; Home</a></p>
+<h1>Cisco IOS XE Software Web-Based Management Interface Denial of Service Vulnerability</h1>
+<p class="byline">
+  Source: cisco / cisco-sa-xe-webui-dos-PtAODAWW
+ — <a href="https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-xe-webui-dos-PtAODAWW">original advisory</a></p>
+<p class="byline">
+  Published: 2026-08-05
+  &middot; Last updated: 2026-08-05
+  &middot; Vendor severity: Medium
+  
+</p>
+
+<h2>CVEs</h2>
+<div class="table-wrap table-wrap--cards">
+<table class="table-cves">
+  <thead>
+    <tr><th>CVE</th><th>CVSS</th><th>CWE</th><th>Exploitation</th></tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-20311">CVE-2026-20311</a></td>
+      <td>6.3</td>
+      <td>CWE-126: Buffer Over-read</td>
+      <td>
+        
+<span class="muted">Not observed in the wild</span>      </td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+
+
+<h2>Affected Products</h2>
+<div class="table-wrap">
+<table>
+  <thead>
+    <tr><th>Product</th><th>Affected versions</th><th>Fixed version</th></tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Cisco IOS XE Software 17.10.1</td>
+      <td>Not specified by vendor</td>
+      <td>Not specified by vendor</td>
+    </tr>
+    <tr>
+      <td>Cisco IOS XE Software 17.10.1a</td>
+      <td>Not specified by vendor</td>
+      <td>Not specified by vendor</td>
+    </tr>
+    <tr>
+      <td>Cisco IOS XE Software 17.10.1b</td>
+      <td>Not specified by vendor</td>
+      <td>Not specified by vendor</td>
+    </tr>
+    <tr>
+      <td>Cisco IOS XE Software 17.11.1</td>
+      <td>Not specified by vendor</td>
+      <td>Not specified by vendor</td>
+    </tr>
+    <tr>
+      <td>Cisco IOS XE Software 17.11.1a</td>
+      <td>Not specified by vendor</td>
+      <td>Not specified by vendor</td>
+    </tr>
+    <tr>
+      <td>Cisco IOS XE Software 17.12.1</td>
+      <td>Not specified by vendor</td>
+      <td>Not specified by vendor</td>
+    </tr>
+    <tr>
+      <td>Cisco IOS XE Software 17.12.1a</td>
+      <td>Not specified by vendor</td>
+      <td>Not specified by vendor</td>
+    </tr>
+    <tr>
+      <td>Cisco IOS XE Software 17.12.1w</td>
+      <td>Not specified by vendor</td>
+      <td>Not specified by vendor</td>
+    </tr>
+    <tr>
+      <td>Cisco IOS XE Software 17.12.1x</td>
+      <td>Not specified by vendor</td>
+      <td>Not specified by vendor</td>
+    </tr>
+    <tr>
+      <td>Cisco IOS XE Software 17.12.1y</td>
+      <td>Not specified by vendor</td>
+      <td>Not specified by vendor</td>
+    </tr>
+    <tr>
+      <td>Cisco IOS XE Software 17.12.1z</td>
+      <td>Not specified by vendor</td>
+      <td>Not specified by vendor</td>
+    </tr>
+    <tr>
+      <td>Cisco IOS XE Software 17.12.1z1</td>
+      <td>Not specified by vendor</td>
+      <td>Not specified by vendor</td>
+    </tr>
+    <tr>
+      <td>Cisco IOS XE Software 17.12.1z2</td>
+      <td>Not specified by vendor</td>
+      <td>Not specified by vendor</td>
+    </tr>
+    <tr>
+      <td>Cisco IOS XE Software 17.12.1z3</td>
+      <td>Not specified by vendor</td>
+      <td>Not specified by vendor</td>
+    </tr>
+    <tr>
+      <td>Cisco IOS XE Software 17.12.1z4</td>
+      <td>Not specified by vendor</td>
+      <td>Not specified by vendor</td>
+    </tr>
+    <tr>
+      <td>Cisco IOS XE Software 17.12.1z5</td>
+      <td>Not specified by vendor</td>
+      <td>Not specified by vendor</td>
+    </tr>
+    <tr>
+      <td>Cisco IOS XE Software 17.12.1z6</td>
+      <td>Not specified by vendor</td>
+      <td>Not specified by vendor</td>
+    </tr>
+    <tr>
+      <td>Cisco IOS XE Software 17.12.2</td>
+      <td>Not specified by vendor</td>
+      <td>Not specified by vendor</td>
+    </tr>
+    <tr>
+      <td>Cisco IOS XE Software 17.12.2a</td>
+      <td>Not specified by vendor</td>
+      <td>Not specified by vendor</td>
+    </tr>
+    <tr>
+      <td>Cisco IOS XE Software 17.12.3</td>
+      <td>Not specified by vendor</td>
+      <td>Not specified by vendor</td>
+    </tr>
+    <tr>
+      <td>Cisco IOS XE Software 17.12.3a</td>
+      <td>Not specified by vendor</td>
+      <td>Not specified by vendor</td>
+    </tr>
+    <tr>
+      <td>Cisco IOS XE Software 17.12.4</td>
+      <td>Not specified by vendor</td>
+      <td>Not specified by vendor</td>
+    </tr>
+    <tr>
+      <td>Cisco IOS XE Software 17.12.4a</td>
+      <td>Not specified by vendor</td>
+      <td>Not specified by vendor</td>
+    </tr>
+    <tr>
+      <td>Cisco IOS XE Software 17.12.4b</td>
+      <td>Not specified by vendor</td>
+      <td>Not specified by vendor</td>
+    </tr>
+    <tr>
+      <td>Cisco IOS XE Software 17.12.5</td>
+      <td>Not specified by vendor</td>
+      <td>Not specified by vendor</td>
+    </tr>
+    <tr>
+      <td>Cisco IOS XE Software 17.12.5a</td>
+      <td>Not specified by vendor</td>
+      <td>Not specified by vendor</td>
+    </tr>
+    <tr>
+      <td>Cisco IOS XE Software 17.12.5b</td>
+      <td>Not specified by vendor</td>
+      <td>Not specified by vendor</td>
+    </tr>
+    <tr>
+      <td>Cisco IOS XE Software 17.12.5c</td>
+      <td>Not specified by vendor</td>
+      <td>Not specified by vendor</td>
+    </tr>
+    <tr>
+      <td>Cisco IOS XE Software 17.12.5d</td>
+      <td>Not specified by vendor</td>
+      <td>Not specified by vendor</td>
+    </tr>
+    <tr>
+      <td>Cisco IOS XE Software 17.12.6</td>
+      <td>Not specified by vendor</td>
+      <td>Not specified by vendor</td>
+    </tr>
+    <tr>
+      <td>Cisco IOS XE Software 17.12.6a</td>
+      <td>Not specified by vendor</td>
+      <td>Not specified by vendor</td>
+    </tr>
+    <tr>
+      <td>Cisco IOS XE Software 17.12.6b</td>
+      <td>Not specified by vendor</td>
+      <td>Not specified by vendor</td>
+    </tr>
+    <tr>
+      <td>Cisco IOS XE Software 17.12.7</td>
+      <td>Not specified by vendor</td>
+      <td>Not specified by vendor</td>
+    </tr>
+    <tr>
+      <td>Cisco IOS XE Software 17.12.7a</td>
+      <td>Not specified by vendor</td>
+      <td>Not specified by vendor</td>
+    </tr>
+    <tr>
+      <td>Cisco IOS XE Software 17.12.7b</td>
+      <td>Not specified by vendor</td>
+      <td>Not specified by vendor</td>
+    </tr>
+    <tr>
+      <td>Cisco IOS XE Software 17.13.1</td>
+      <td>Not specified by vendor</td>
+      <td>Not specified by vendor</td>
+    </tr>
+    <tr>
+      <td>Cisco IOS XE Software 17.13.1a</td>
+      <td>Not specified by vendor</td>
+      <td>Not specified by vendor</td>
+    </tr>
+    <tr>
+      <td>Cisco IOS XE Software 17.14.1</td>
+      <td>Not specified by vendor</td>
+      <td>Not specified by vendor</td>
+    </tr>
+    <tr>
+      <td>Cisco IOS XE Software 17.14.1a</td>
+      <td>Not specified by vendor</td>
+      <td>Not specified by vendor</td>
+    </tr>
+    <tr>
+      <td>Cisco IOS XE Software 17.15.1</td>
+      <td>Not specified by vendor</td>
+      <td>Not specified by vendor</td>
+    </tr>
+    <tr>
+      <td>Cisco IOS XE Software 17.15.1a</td>
+      <td>Not specified by vendor</td>
+      <td>Not specified by vendor</td>
+    </tr>
+    <tr>
+      <td>Cisco IOS XE Software 17.15.1b</td>
+      <td>Not specified by vendor</td>
+      <td>Not specified by vendor</td>
+    </tr>
+    <tr>
+      <td>Cisco IOS XE Software 17.15.1w</td>
+      <td>Not specified by vendor</td>
+      <td>Not specified by vendor</td>
+    </tr>
+    <tr>
+      <td>Cisco IOS XE Software 17.15.1x</td>
+      <td>Not specified by vendor</td>
+      <td>Not specified by vendor</td>
+    </tr>
+    <tr>
+      <td>Cisco IOS XE Software 17.15.1y</td>
+      <td>Not specified by vendor</td>
+      <td>Not specified by vendor</td>
+    </tr>
+    <tr>
+      <td>Cisco IOS XE Software 17.15.1z</td>
+      <td>Not specified by vendor</td>
+      <td>Not specified by vendor</td>
+    </tr>
+    <tr>
+      <td>Cisco IOS XE Software 17.15.2</td>
+      <td>Not specified by vendor</td>
+      <td>Not specified by vendor</td>
+    </tr>
+    <tr>
+      <td>Cisco IOS XE Software 17.15.2a</td>
+      <td>Not specified by vendor</td>
+      <td>Not specified by vendor</td>
+    </tr>
+    <tr>
+      <td>Cisco IOS XE Software 17.15.2b</td>
+      <td>Not specified by vendor</td>
+      <td>Not specified by vendor</td>
+    </tr>
+    <tr>
+      <td>Cisco IOS XE Software 17.15.2c</td>
+      <td>Not specified by vendor</td>
+      <td>Not specified by vendor</td>
+    </tr>
+    <tr>
+      <td>Cisco IOS XE Software 17.15.3</td>
+      <td>Not specified by vendor</td>
+      <td>Not specified by vendor</td>
+    </tr>
+    <tr>
+      <td>Cisco IOS XE Software 17.15.3a</td>
+      <td>Not specified by vendor</td>
+      <td>Not specified by vendor</td>
+    </tr>
+    <tr>
+      <td>Cisco IOS XE Software 17.15.3b</td>
+      <td>Not specified by vendor</td>
+      <td>Not specified by vendor</td>
+    </tr>
+    <tr>
+      <td>Cisco IOS XE Software 17.15.4</td>
+      <td>Not specified by vendor</td>
+      <td>Not specified by vendor</td>
+    </tr>
+    <tr>
+      <td>Cisco IOS XE Software 17.15.4a</td>
+      <td>Not specified by vendor</td>
+      <td>Not specified by vendor</td>
+    </tr>
+    <tr>
+      <td>Cisco IOS XE Software 17.15.4b</td>
+      <td>Not specified by vendor</td>
+      <td>Not specified by vendor</td>
+    </tr>
+    <tr>
+      <td>Cisco IOS XE Software 17.15.4c</td>
+      <td>Not specified by vendor</td>
+      <td>Not specified by vendor</td>
+    </tr>
+    <tr>
+      <td>Cisco IOS XE Software 17.15.4d</td>
+      <td>Not specified by vendor</td>
+      <td>Not specified by vendor</td>
+    </tr>
+    <tr>
+      <td>Cisco IOS XE Software 17.15.4s1</td>
+      <td>Not specified by vendor</td>
+      <td>Not specified by vendor</td>
+    </tr>
+    <tr>
+      <td>Cisco IOS XE Software 17.15.5</td>
+      <td>Not specified by vendor</td>
+      <td>Not specified by vendor</td>
+    </tr>
+    <tr>
+      <td>Cisco IOS XE Software 17.15.5a</td>
+      <td>Not specified by vendor</td>
+      <td>Not specified by vendor</td>
+    </tr>
+    <tr>
+      <td>Cisco IOS XE Software 17.16.1</td>
+      <td>Not specified by vendor</td>
+      <td>Not specified by vendor</td>
+    </tr>
+    <tr>
+      <td>Cisco IOS XE Software 17.16.1a</td>
+      <td>Not specified by vendor</td>
+      <td>Not specified by vendor</td>
+    </tr>
+    <tr>
+      <td>Cisco IOS XE Software 17.17.1</td>
+      <td>Not specified by vendor</td>
+      <td>Not specified by vendor</td>
+    </tr>
+    <tr>
+      <td>Cisco IOS XE Software 17.18.1</td>
+      <td>Not specified by vendor</td>
+      <td>Not specified by vendor</td>
+    </tr>
+    <tr>
+      <td>Cisco IOS XE Software 17.18.1a</td>
+      <td>Not specified by vendor</td>
+      <td>Not specified by vendor</td>
+    </tr>
+    <tr>
+      <td>Cisco IOS XE Software 17.18.1w</td>
+      <td>Not specified by vendor</td>
+      <td>Not specified by vendor</td>
+    </tr>
+    <tr>
+      <td>Cisco IOS XE Software 17.18.1x</td>
+      <td>Not specified by vendor</td>
+      <td>Not specified by vendor</td>
+    </tr>
+    <tr>
+      <td>Cisco IOS XE Software 17.18.1y</td>
+      <td>Not specified by vendor</td>
+      <td>Not specified by vendor</td>
+    </tr>
+    <tr>
+      <td>Cisco IOS XE Software 17.18.1z</td>
+      <td>Not specified by vendor</td>
+      <td>Not specified by vendor</td>
+    </tr>
+    <tr>
+      <td>Cisco IOS XE Software 17.18.2</td>
+      <td>Not specified by vendor</td>
+      <td>Not specified by vendor</td>
+    </tr>
+    <tr>
+      <td>Cisco IOS XE Software 17.18.3</td>
+      <td>Not specified by vendor</td>
+      <td>Not specified by vendor</td>
+    </tr>
+    <tr>
+      <td>Cisco IOS XE Software 17.18.3a</td>
+      <td>Not specified by vendor</td>
+      <td>Not specified by vendor</td>
+    </tr>
+    <tr>
+      <td>Cisco IOS XE Software 17.3.1</td>
+      <td>Not specified by vendor</td>
+      <td>Not specified by vendor</td>
+    </tr>
+    <tr>
+      <td>Cisco IOS XE Software 17.3.1a</td>
+      <td>Not specified by vendor</td>
+      <td>Not specified by vendor</td>
+    </tr>
+    <tr>
+      <td>Cisco IOS XE Software 17.3.1w</td>
+      <td>Not specified by vendor</td>
+      <td>Not specified by vendor</td>
+    </tr>
+    <tr>
+      <td>Cisco IOS XE Software 17.3.1x</td>
+      <td>Not specified by vendor</td>
+      <td>Not specified by vendor</td>
+    </tr>
+    <tr>
+      <td>Cisco IOS XE Software 17.3.1z</td>
+      <td>Not specified by vendor</td>
+      <td>Not specified by vendor</td>
+    </tr>
+    <tr>
+      <td>Cisco IOS XE Software 17.3.2</td>
+      <td>Not specified by vendor</td>
+      <td>Not specified by vendor</td>
+    </tr>
+    <tr>
+      <td>Cisco IOS XE Software 17.3.2a</td>
+      <td>Not specified by vendor</td>
+      <td>Not specified by vendor</td>
+    </tr>
+    <tr>
+      <td>Cisco IOS XE Software 17.3.3</td>
+      <td>Not specified by vendor</td>
+      <td>Not specified by vendor</td>
+    </tr>
+    <tr>
+      <td>Cisco IOS XE Software 17.3.3a</td>
+      <td>Not specified by vendor</td>
+      <td>Not specified by vendor</td>
+    </tr>
+    <tr>
+      <td>Cisco IOS XE Software 17.3.4</td>
+      <td>Not specified by vendor</td>
+      <td>Not specified by vendor</td>
+    </tr>
+    <tr>
+      <td>Cisco IOS XE Software 17.3.4a</td>
+      <td>Not specified by vendor</td>
+      <td>Not specified by vendor</td>
+    </tr>
+    <tr>
+      <td>Cisco IOS XE Software 17.3.4b</td>
+      <td>Not specified by vendor</td>
+      <td>Not specified by vendor</td>
+    </tr>
+    <tr>
+      <td>Cisco IOS XE Software 17.3.4c</td>
+      <td>Not specified by vendor</td>
+      <td>Not specified by vendor</td>
+    </tr>
+    <tr>
+      <td>Cisco IOS XE Software 17.3.5</td>
+      <td>Not specified by vendor</td>
+      <td>Not specified by vendor</td>
+    </tr>
+    <tr>
+      <td>Cisco IOS XE Software 17.3.5a</td>
+      <td>Not specified by vendor</td>
+      <td>Not specified by vendor</td>
+    </tr>
+    <tr>
+      <td>Cisco IOS XE Software 17.3.5b</td>
+      <td>Not specified by vendor</td>
+      <td>Not specified by vendor</td>
+    </tr>
+    <tr>
+      <td>Cisco IOS XE Software 17.3.6</td>
+      <td>Not specified by vendor</td>
+      <td>Not specified by vendor</td>
+    </tr>
+    <tr>
+      <td>Cisco IOS XE Software 17.3.7</td>
+      <td>Not specified by vendor</td>
+      <td>Not specified by vendor</td>
+    </tr>
+    <tr>
+      <td>Cisco IOS XE Software 17.3.8</td>
+      <td>Not specified by vendor</td>
+      <td>Not specified by vendor</td>
+    </tr>
+    <tr>
+      <td>Cisco IOS XE Software 17.3.8a</td>
+      <td>Not specified by vendor</td>
+      <td>Not specified by vendor</td>
+    </tr>
+    <tr>
+      <td>Cisco IOS XE Software 17.4.1</td>
+      <td>Not specified by vendor</td>
+      <td>Not specified by vendor</td>
+    </tr>
+    <tr>
+      <td>Cisco IOS XE Software 17.4.1a</td>
+      <td>Not specified by vendor</td>
+      <td>Not specified by vendor</td>
+    </tr>
+    <tr>
+      <td>Cisco IOS XE Software 17.4.1b</td>
+      <td>Not specified by vendor</td>
+      <td>Not specified by vendor</td>
+    </tr>
+    <tr>
+      <td>Cisco IOS XE Software 17.4.1c</td>
+      <td>Not specified by vendor</td>
+      <td>Not specified by vendor</td>
+    </tr>
+    <tr>
+      <td>Cisco IOS XE Software 17.4.2</td>
+      <td>Not specified by vendor</td>
+      <td>Not specified by vendor</td>
+    </tr>
+    <tr>
+      <td>Cisco IOS XE Software 17.4.2a</td>
+      <td>Not specified by vendor</td>
+      <td>Not specified by vendor</td>
+    </tr>
+    <tr>
+      <td>Cisco IOS XE Software 17.5.1</td>
+      <td>Not specified by vendor</td>
+      <td>Not specified by vendor</td>
+    </tr>
+    <tr>
+      <td>Cisco IOS XE Software 17.5.1a</td>
+      <td>Not specified by vendor</td>
+      <td>Not specified by vendor</td>
+    </tr>
+    <tr>
+      <td>Cisco IOS XE Software 17.5.1b</td>
+      <td>Not specified by vendor</td>
+      <td>Not specified by vendor</td>
+    </tr>
+    <tr>
+      <td>Cisco IOS XE Software 17.5.1c</td>
+      <td>Not specified by vendor</td>
+      <td>Not specified by vendor</td>
+    </tr>
+    <tr>
+      <td>Cisco IOS XE Software 17.6.1</td>
+      <td>Not specified by vendor</td>
+      <td>Not specified by vendor</td>
+    </tr>
+    <tr>
+      <td>Cisco IOS XE Software 17.6.1a</td>
+      <td>Not specified by vendor</td>
+      <td>Not specified by vendor</td>
+    </tr>
+    <tr>
+      <td>Cisco IOS XE Software 17.6.1w</td>
+      <td>Not specified by vendor</td>
+      <td>Not specified by vendor</td>
+    </tr>
+    <tr>
+      <td>Cisco IOS XE Software 17.6.1x</td>
+      <td>Not specified by vendor</td>
+      <td>Not specified by vendor</td>
+    </tr>
+    <tr>
+      <td>Cisco IOS XE Software 17.6.1y</td>
+      <td>Not specified by vendor</td>
+      <td>Not specified by vendor</td>
+    </tr>
+    <tr>
+      <td>Cisco IOS XE Software 17.6.1z</td>
+      <td>Not specified by vendor</td>
+      <td>Not specified by vendor</td>
+    </tr>
+    <tr>
+      <td>Cisco IOS XE Software 17.6.1z1</td>
+      <td>Not specified by vendor</td>
+      <td>Not specified by vendor</td>
+    </tr>
+    <tr>
+      <td>Cisco IOS XE Software 17.6.2</td>
+      <td>Not specified by vendor</td>
+      <td>Not specified by vendor</td>
+    </tr>
+    <tr>
+      <td>Cisco IOS XE Software 17.6.3</td>
+      <td>Not specified by vendor</td>
+      <td>Not specified by vendor</td>
+    </tr>
+    <tr>
+      <td>Cisco IOS XE Software 17.6.3a</td>
+      <td>Not specified by vendor</td>
+      <td>Not specified by vendor</td>
+    </tr>
+    <tr>
+      <td>Cisco IOS XE Software 17.6.4</td>
+      <td>Not specified by vendor</td>
+      <td>Not specified by vendor</td>
+    </tr>
+    <tr>
+      <td>Cisco IOS XE Software 17.6.5</td>
+      <td>Not specified by vendor</td>
+      <td>Not specified by vendor</td>
+    </tr>
+    <tr>
+      <td>Cisco IOS XE Software 17.6.5a</td>
+      <td>Not specified by vendor</td>
+      <td>Not specified by vendor</td>
+    </tr>
+    <tr>
+      <td>Cisco IOS XE Software 17.6.6</td>
+      <td>Not specified by vendor</td>
+      <td>Not specified by vendor</td>
+    </tr>
+    <tr>
+      <td>Cisco IOS XE Software 17.6.6a</td>
+      <td>Not specified by vendor</td>
+      <td>Not specified by vendor</td>
+    </tr>
+    <tr>
+      <td>Cisco IOS XE Software 17.6.7</td>
+      <td>Not specified by vendor</td>
+      <td>Not specified by vendor</td>
+    </tr>
+    <tr>
+      <td>Cisco IOS XE Software 17.6.8</td>
+      <td>Not specified by vendor</td>
+      <td>Not specified by vendor</td>
+    </tr>
+    <tr>
+      <td>Cisco IOS XE Software 17.6.8a</td>
+      <td>Not specified by vendor</td>
+      <td>Not specified by vendor</td>
+    </tr>
+    <tr>
+      <td>Cisco IOS XE Software 17.7.1</td>
+      <td>Not specified by vendor</td>
+      <td>Not specified by vendor</td>
+    </tr>
+    <tr>
+      <td>Cisco IOS XE Software 17.7.1a</td>
+      <td>Not specified by vendor</td>
+      <td>Not specified by vendor</td>
+    </tr>
+    <tr>
+      <td>Cisco IOS XE Software 17.7.1b</td>
+      <td>Not specified by vendor</td>
+      <td>Not specified by vendor</td>
+    </tr>
+    <tr>
+      <td>Cisco IOS XE Software 17.7.2</td>
+      <td>Not specified by vendor</td>
+      <td>Not specified by vendor</td>
+    </tr>
+    <tr>
+      <td>Cisco IOS XE Software 17.8.1</td>
+      <td>Not specified by vendor</td>
+      <td>Not specified by vendor</td>
+    </tr>
+    <tr>
+      <td>Cisco IOS XE Software 17.8.1a</td>
+      <td>Not specified by vendor</td>
+      <td>Not specified by vendor</td>
+    </tr>
+    <tr>
+      <td>Cisco IOS XE Software 17.9.1</td>
+      <td>Not specified by vendor</td>
+      <td>Not specified by vendor</td>
+    </tr>
+    <tr>
+      <td>Cisco IOS XE Software 17.9.1a</td>
+      <td>Not specified by vendor</td>
+      <td>Not specified by vendor</td>
+    </tr>
+    <tr>
+      <td>Cisco IOS XE Software 17.9.1w</td>
+      <td>Not specified by vendor</td>
+      <td>Not specified by vendor</td>
+    </tr>
+    <tr>
+      <td>Cisco IOS XE Software 17.9.1x</td>
+      <td>Not specified by vendor</td>
+      <td>Not specified by vendor</td>
+    </tr>
+    <tr>
+      <td>Cisco IOS XE Software 17.9.1x1</td>
+      <td>Not specified by vendor</td>
+      <td>Not specified by vendor</td>
+    </tr>
+    <tr>
+      <td>Cisco IOS XE Software 17.9.1y</td>
+      <td>Not specified by vendor</td>
+      <td>Not specified by vendor</td>
+    </tr>
+    <tr>
+      <td>Cisco IOS XE Software 17.9.1y1</td>
+      <td>Not specified by vendor</td>
+      <td>Not specified by vendor</td>
+    </tr>
+    <tr>
+      <td>Cisco IOS XE Software 17.9.2</td>
+      <td>Not specified by vendor</td>
+      <td>Not specified by vendor</td>
+    </tr>
+    <tr>
+      <td>Cisco IOS XE Software 17.9.2a</td>
+      <td>Not specified by vendor</td>
+      <td>Not specified by vendor</td>
+    </tr>
+    <tr>
+      <td>Cisco IOS XE Software 17.9.3</td>
+      <td>Not specified by vendor</td>
+      <td>Not specified by vendor</td>
+    </tr>
+    <tr>
+      <td>Cisco IOS XE Software 17.9.3a</td>
+      <td>Not specified by vendor</td>
+      <td>Not specified by vendor</td>
+    </tr>
+    <tr>
+      <td>Cisco IOS XE Software 17.9.4</td>
+      <td>Not specified by vendor</td>
+      <td>Not specified by vendor</td>
+    </tr>
+    <tr>
+      <td>Cisco IOS XE Software 17.9.4a</td>
+      <td>Not specified by vendor</td>
+      <td>Not specified by vendor</td>
+    </tr>
+    <tr>
+      <td>Cisco IOS XE Software 17.9.5</td>
+      <td>Not specified by vendor</td>
+      <td>Not specified by vendor</td>
+    </tr>
+    <tr>
+      <td>Cisco IOS XE Software 17.9.5a</td>
+      <td>Not specified by vendor</td>
+      <td>Not specified by vendor</td>
+    </tr>
+    <tr>
+      <td>Cisco IOS XE Software 17.9.5b</td>
+      <td>Not specified by vendor</td>
+      <td>Not specified by vendor</td>
+    </tr>
+    <tr>
+      <td>Cisco IOS XE Software 17.9.5c</td>
+      <td>Not specified by vendor</td>
+      <td>Not specified by vendor</td>
+    </tr>
+    <tr>
+      <td>Cisco IOS XE Software 17.9.5d</td>
+      <td>Not specified by vendor</td>
+      <td>Not specified by vendor</td>
+    </tr>
+    <tr>
+      <td>Cisco IOS XE Software 17.9.5e</td>
+      <td>Not specified by vendor</td>
+      <td>Not specified by vendor</td>
+    </tr>
+    <tr>
+      <td>Cisco IOS XE Software 17.9.5f</td>
+      <td>Not specified by vendor</td>
+      <td>Not specified by vendor</td>
+    </tr>
+    <tr>
+      <td>Cisco IOS XE Software 17.9.6</td>
+      <td>Not specified by vendor</td>
+      <td>Not specified by vendor</td>
+    </tr>
+    <tr>
+      <td>Cisco IOS XE Software 17.9.6a</td>
+      <td>Not specified by vendor</td>
+      <td>Not specified by vendor</td>
+    </tr>
+    <tr>
+      <td>Cisco IOS XE Software 17.9.6b</td>
+      <td>Not specified by vendor</td>
+      <td>Not specified by vendor</td>
+    </tr>
+    <tr>
+      <td>Cisco IOS XE Software 17.9.7</td>
+      <td>Not specified by vendor</td>
+      <td>Not specified by vendor</td>
+    </tr>
+    <tr>
+      <td>Cisco IOS XE Software 17.9.7a</td>
+      <td>Not specified by vendor</td>
+      <td>Not specified by vendor</td>
+    </tr>
+    <tr>
+      <td>Cisco IOS XE Software 17.9.7b</td>
+      <td>Not specified by vendor</td>
+      <td>Not specified by vendor</td>
+    </tr>
+    <tr>
+      <td>Cisco IOS XE Software 17.9.8</td>
+      <td>Not specified by vendor</td>
+      <td>Not specified by vendor</td>
+    </tr>
+    <tr>
+      <td>Cisco IOS XE Software 17.9.9</td>
+      <td>Not specified by vendor</td>
+      <td>Not specified by vendor</td>
+    </tr>
+    <tr>
+      <td>Cisco IOS XE Software 26.1.1</td>
+      <td>Not specified by vendor</td>
+      <td>Not specified by vendor</td>
+    </tr>
+    <tr>
+      <td>Cisco IOS XE Software 26.1.1a</td>
+      <td>Not specified by vendor</td>
+      <td>Not specified by vendor</td>
+    </tr>
+    <tr>
+      <td>Cisco IOS XE Software 26.2.1ea</td>
+      <td>Not specified by vendor</td>
+      <td>Not specified by vendor</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+</main>
+<footer class="site-footer">
+  <p>Structured vendor advisory data only — no AI-generated narrative in this view.
+  Generated 2026-08-06 04:00 UTC.</p>
+</footer>
+</div>
+</body>
+</html>
