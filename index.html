@@ -30,9 +30,9 @@
   </fieldset>
   <fieldset id="vendor-filter">
     <legend>Vendor (All Advisories)</legend>
+    <label><input type="checkbox" value="fortinet" checked> Fortinet</label>
     <label><input type="checkbox" value="cisco" checked> Cisco</label>
     <label><input type="checkbox" value="microsoft" checked> Microsoft</label>
-    <label><input type="checkbox" value="fortinet" checked> Fortinet</label>
   </fieldset>
 </aside>
 
@@ -44,7 +44,7 @@ exploited, and whether to deploy now or wait. No AI-generated narrative in this 
 
 <div class="stats-strip">
   <div class="stat-card">
-    <div class="stat-value">116</div>
+    <div class="stat-value">125</div>
     <div class="stat-label">Advisories tracked</div>
   </div>
   <div class="stat-card">
@@ -227,13 +227,76 @@ exploited, and whether to deploy now or wait. No AI-generated narrative in this 
   <li><a href="/advisories/microsoft-2026-aug.html">August 2026 Security Updates</a></li>
 </ul>
 
-<h2>All Published Advisories (116)</h2>
+<h2>All Published Advisories (125)</h2>
 <div class="table-wrap table-wrap--cards">
 <table class="table-advisories">
   <thead>
     <tr><th>Published</th><th>Source</th><th>Advisory</th><th>Max CVSS</th><th>Exploitation</th></tr>
   </thead>
   <tbody>
+    <tr data-vendor="fortinet">
+      <td>2026-08-12</td>
+      <td>fortinet</td>
+      <td><a href="/advisories/fortinet-fg-ir-26-162.html">UI DoS attack</a></td>
+      <td>5.0</td>
+      <td></td>
+    </tr>
+    <tr data-vendor="fortinet">
+      <td>2026-08-12</td>
+      <td>fortinet</td>
+      <td><a href="/advisories/fortinet-fg-ir-26-161.html">Stack buffer overflow in WAD</a></td>
+      <td>5.1</td>
+      <td></td>
+    </tr>
+    <tr data-vendor="fortinet">
+      <td>2026-08-12</td>
+      <td>fortinet</td>
+      <td><a href="/advisories/fortinet-fg-ir-26-159.html">Server-Side Request Forgery (SSRF)</a></td>
+      <td>3.4</td>
+      <td></td>
+    </tr>
+    <tr data-vendor="fortinet">
+      <td>2026-08-12</td>
+      <td>fortinet</td>
+      <td><a href="/advisories/fortinet-fg-ir-26-156.html">Heap overflow in kernel driver due to missing size validation</a></td>
+      <td>7.3</td>
+      <td></td>
+    </tr>
+    <tr data-vendor="fortinet">
+      <td>2026-08-12</td>
+      <td>fortinet</td>
+      <td><a href="/advisories/fortinet-fg-ir-26-163.html">HTTP/2 Bomb CVE-2026-49975</a></td>
+      <td>5.8</td>
+      <td></td>
+    </tr>
+    <tr data-vendor="fortinet">
+      <td>2026-08-12</td>
+      <td>fortinet</td>
+      <td><a href="/advisories/fortinet-fg-ir-26-160.html">FGFM Authentication Weakening via CLI Configuration</a></td>
+      <td>7.3</td>
+      <td></td>
+    </tr>
+    <tr data-vendor="fortinet">
+      <td>2026-08-12</td>
+      <td>fortinet</td>
+      <td><a href="/advisories/fortinet-fg-ir-26-157.html">Content-Encoding WAF Evasion</a></td>
+      <td>4.8</td>
+      <td></td>
+    </tr>
+    <tr data-vendor="fortinet">
+      <td>2026-08-12</td>
+      <td>fortinet</td>
+      <td><a href="/advisories/fortinet-fg-ir-26-158.html">Broken access control in the RADIUS type admin group</a></td>
+      <td>8.8</td>
+      <td></td>
+    </tr>
+    <tr data-vendor="cisco">
+      <td>2026-08-12</td>
+      <td>cisco</td>
+      <td><a href="/advisories/cisco-cisco-sa-notice-ldquvx5d.html">Cisco Advance Notification for Publication of August 19, 2026, Security Advisories</a></td>
+      <td>Not yet scored</td>
+      <td></td>
+    </tr>
     <tr data-vendor="cisco">
       <td>2026-08-11</td>
       <td>cisco</td>
@@ -1075,7 +1138,7 @@ exploited, and whether to deploy now or wait. No AI-generated narrative in this 
 </main>
 <footer class="site-footer">
   <p>Structured vendor advisory data only — no AI-generated narrative in this view.
-  Generated 2026-08-12 04:00 UTC.</p>
+  Generated 2026-08-13 04:00 UTC.</p>
 </footer>
 </div>
 </body>
