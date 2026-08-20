@@ -30,8 +30,8 @@
   </fieldset>
   <fieldset id="vendor-filter">
     <legend>Vendor (All Advisories)</legend>
-    <label><input type="checkbox" value="fortinet" checked> Fortinet</label>
     <label><input type="checkbox" value="cisco" checked> Cisco</label>
+    <label><input type="checkbox" value="fortinet" checked> Fortinet</label>
     <label><input type="checkbox" value="microsoft" checked> Microsoft</label>
   </fieldset>
 </aside>
@@ -44,11 +44,11 @@ exploited, and whether to deploy now or wait. No AI-generated narrative in this 
 
 <div class="stats-strip">
   <div class="stat-card">
-    <div class="stat-value">125</div>
+    <div class="stat-value">133</div>
     <div class="stat-label">Advisories tracked</div>
   </div>
   <div class="stat-card">
-    <div class="stat-value">150</div>
+    <div class="stat-value">152</div>
     <div class="stat-label">Deploy now</div>
   </div>
   <div class="stat-card">
@@ -73,6 +73,20 @@ exploited, and whether to deploy now or wait. No AI-generated narrative in this 
     <tr><th>Date</th><th>KB</th><th>Product</th><th>Advisory</th><th>Verdict</th></tr>
   </thead>
   <tbody>
+    <tr data-verdict="deploy_now">
+      <td>2026-08-20</td>
+      <td>5122880</td>
+      <td>Windows 11 Version 23H2 for ARM64-based Systems</td>
+      <td><a href="/advisories/microsoft-2026-aug.html">August 2026 Security Updates</a></td>
+      <td><span class="verdict-badge verdict-deploy_now"><span class="dot"></span>deploy now</span></td>
+    </tr>
+    <tr data-verdict="deploy_now">
+      <td>2026-08-20</td>
+      <td>5122880</td>
+      <td>Windows 11 Version 23H2 for x64-based Systems</td>
+      <td><a href="/advisories/microsoft-2026-aug.html">August 2026 Security Updates</a></td>
+      <td><span class="verdict-badge verdict-deploy_now"><span class="dot"></span>deploy now</span></td>
+    </tr>
     <tr data-verdict="deploy_now">
       <td>2026-08-12</td>
       <td>5120418</td>
@@ -199,20 +213,6 @@ exploited, and whether to deploy now or wait. No AI-generated narrative in this 
       <td><a href="/advisories/microsoft-2026-aug.html">August 2026 Security Updates</a></td>
       <td><span class="verdict-badge verdict-deploy_now"><span class="dot"></span>deploy now</span></td>
     </tr>
-    <tr data-verdict="deploy_now">
-      <td>2026-08-12</td>
-      <td>5123273</td>
-      <td>Windows 11 Version 24H2 for x64-based Systems</td>
-      <td><a href="/advisories/microsoft-2026-aug.html">August 2026 Security Updates</a></td>
-      <td><span class="verdict-badge verdict-deploy_now"><span class="dot"></span>deploy now</span></td>
-    </tr>
-    <tr data-verdict="deploy_now">
-      <td>2026-08-12</td>
-      <td>5123607</td>
-      <td>Windows 11 Version 24H2 for x64-based Systems</td>
-      <td><a href="/advisories/microsoft-2026-aug.html">August 2026 Security Updates</a></td>
-      <td><span class="verdict-badge verdict-deploy_now"><span class="dot"></span>deploy now</span></td>
-    </tr>
   </tbody>
 </table>
 </div>
@@ -227,13 +227,69 @@ exploited, and whether to deploy now or wait. No AI-generated narrative in this 
   <li><a href="/advisories/microsoft-2026-aug.html">August 2026 Security Updates</a></li>
 </ul>
 
-<h2>All Published Advisories (125)</h2>
+<h2>All Published Advisories (133)</h2>
 <div class="table-wrap table-wrap--cards">
 <table class="table-advisories">
   <thead>
     <tr><th>Published</th><th>Source</th><th>Advisory</th><th>Max CVSS</th><th>Exploitation</th></tr>
   </thead>
   <tbody>
+    <tr data-vendor="cisco">
+      <td>2026-08-19</td>
+      <td>cisco</td>
+      <td><a href="/advisories/cisco-cisco-sa-cuic-sql-inject-2qbfwsm5.html">Cisco Unified Intelligence Center SQL Injection Vulnerability</a></td>
+      <td>6.5</td>
+      <td></td>
+    </tr>
+    <tr data-vendor="cisco">
+      <td>2026-08-19</td>
+      <td>cisco</td>
+      <td><a href="/advisories/cisco-cisco-sa-ucce-pcce-ssrf-tghhxd.html">Cisco Packaged Contact Center Enterprise and Cisco Unified Contact Center Enterprise Server-Side Request Forgery Vulnerability</a></td>
+      <td>5.0</td>
+      <td></td>
+    </tr>
+    <tr data-vendor="cisco">
+      <td>2026-08-19</td>
+      <td>cisco</td>
+      <td><a href="/advisories/cisco-cisco-sa-ie1k-ngxuff52.html">Cisco Industrial Ethernet 1000 Series Switches Stored Cross-Site Scripting Vulnerability</a></td>
+      <td>5.4</td>
+      <td></td>
+    </tr>
+    <tr data-vendor="cisco">
+      <td>2026-08-19</td>
+      <td>cisco</td>
+      <td><a href="/advisories/cisco-cisco-sa-hardening-csw1-shsvndwp.html">Cisco Secure Workload Software Security Hardening Release: August 2026</a></td>
+      <td>10.0</td>
+      <td></td>
+    </tr>
+    <tr data-vendor="cisco">
+      <td>2026-08-19</td>
+      <td>cisco</td>
+      <td><a href="/advisories/cisco-cisco-sa-bworks-xxe-uwud7cet.html">Cisco BroadWorks Out-of-Band Blind XML External Entity Injection Vulnerability</a></td>
+      <td>7.5</td>
+      <td></td>
+    </tr>
+    <tr data-vendor="cisco">
+      <td>2026-08-19</td>
+      <td>cisco</td>
+      <td><a href="/advisories/cisco-cisco-sa-roomos-bof-vtmanzgu.html">Cisco RoomOS Stack Overflow Vulnerability</a></td>
+      <td>6.1</td>
+      <td></td>
+    </tr>
+    <tr data-vendor="cisco">
+      <td>2026-08-19</td>
+      <td>cisco</td>
+      <td><a href="/advisories/cisco-cisco-sa-hardening-crosswork-uzdtu9vh.html">Cisco Crosswork Security Hardening Release: August 2026</a></td>
+      <td>10.0</td>
+      <td></td>
+    </tr>
+    <tr data-vendor="cisco">
+      <td>2026-08-19</td>
+      <td>cisco</td>
+      <td><a href="/advisories/cisco-cisco-sa-ie1k-uxq86lnx.html">Cisco Industrial Ethernet 1000 Series Switches Denial of Service Vulnerability</a></td>
+      <td>5.3</td>
+      <td></td>
+    </tr>
     <tr data-vendor="fortinet">
       <td>2026-08-12</td>
       <td>fortinet</td>
@@ -1138,7 +1194,7 @@ exploited, and whether to deploy now or wait. No AI-generated narrative in this 
 </main>
 <footer class="site-footer">
   <p>Structured vendor advisory data only — no AI-generated narrative in this view.
-  Generated 2026-08-19 04:00 UTC.</p>
+  Generated 2026-08-20 04:00 UTC.</p>
 </footer>
 </div>
 </body>
