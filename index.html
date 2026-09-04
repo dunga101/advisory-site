@@ -30,9 +30,9 @@
   </fieldset>
   <fieldset id="vendor-filter">
     <legend>Vendor (All Advisories)</legend>
+    <label><input type="checkbox" value="microsoft" checked> Microsoft</label>
     <label><input type="checkbox" value="cisco" checked> Cisco</label>
     <label><input type="checkbox" value="fortinet" checked> Fortinet</label>
-    <label><input type="checkbox" value="microsoft" checked> Microsoft</label>
   </fieldset>
 </aside>
 
@@ -44,7 +44,7 @@ exploited, and whether to deploy now or wait. No AI-generated narrative in this 
 
 <div class="stats-strip">
   <div class="stat-card">
-    <div class="stat-value">138</div>
+    <div class="stat-value">139</div>
     <div class="stat-label">Advisories tracked</div>
   </div>
   <div class="stat-card">
@@ -227,13 +227,20 @@ exploited, and whether to deploy now or wait. No AI-generated narrative in this 
   <li><a href="/advisories/microsoft-2026-aug.html">August 2026 Security Updates</a></li>
 </ul>
 
-<h2>All Published Advisories (138)</h2>
+<h2>All Published Advisories (139)</h2>
 <div class="table-wrap table-wrap--cards">
 <table class="table-advisories">
   <thead>
     <tr><th>Published</th><th>Source</th><th>Advisory</th><th>Max CVSS</th><th>Exploitation</th></tr>
   </thead>
   <tbody>
+    <tr data-vendor="microsoft">
+      <td>2026-09-03</td>
+      <td>microsoft</td>
+      <td><a href="/advisories/microsoft-2026-sep.html">September 2026 Early Security Updates</a></td>
+      <td>10.0</td>
+      <td></td>
+    </tr>
     <tr data-vendor="cisco">
       <td>2026-09-02</td>
       <td>cisco</td>
@@ -489,7 +496,7 @@ exploited, and whether to deploy now or wait. No AI-generated narrative in this 
     <tr data-vendor="cisco">
       <td>2026-08-05</td>
       <td>cisco</td>
-      <td><a href="/advisories/cisco-cisco-sa-hardening-iosxe-v8nmumzj.html">Cisco IOS XE Software Security Hardening Release:  August 2026</a></td>
+      <td><a href="/advisories/cisco-cisco-sa-hardening-iosxe-v8nmumzj.html">Cisco IOS XE Software Security Hardening Release: August 2026</a></td>
       <td>9.8</td>
       <td></td>
     </tr>
@@ -1229,7 +1236,7 @@ exploited, and whether to deploy now or wait. No AI-generated narrative in this 
 </main>
 <footer class="site-footer">
   <p>Structured vendor advisory data only — no AI-generated narrative in this view.
-  Generated 2026-09-03 04:00 UTC.</p>
+  Generated 2026-09-04 04:00 UTC.</p>
 </footer>
 </div>
 </body>
